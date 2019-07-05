@@ -1,0 +1,126 @@
+.project-10i .proceed-prompt.release-prompt {
+    width: 411px;
+      height: 129px;
+    display: none;
+}
+
+.project-10i .release-prompt .msg-txt {
+    font-size: 13px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.project-10i .proceed-prompt.release-prompt .left-prompt {
+    height: 129px;
+}
+.project-10i .proceed-prompt.release-prompt .prompt-message {
+      padding-top: 17px;
+}
+
+.width-100-Custom{
+	width:100% !important;
+}
+
+.marginLeft-100{
+	margin-left: -100px;
+}
+
+.marginLeft-27{
+	margin-left: -27px;
+}
+.textAlignLeft{
+	text-align: left !important;
+}
+.capitalize::first-letter {
+  text-transform: uppercase;
+}
+
+.paddingTopBottom-2-cus{
+    padding-top: 4px !important;
+    padding-bottom: 5px !important;
+}
+
+. paddingLeftRight-4 {
+	padding-left: 4px !important;
+	padding-right: 4px !important;
+}
+
+.italicFont{
+	font-style: italic;
+}
+ .project-10i .tdupper {
+	 width: 99%;
+	 display: block;
+	 height: 25px;
+	 /* padding: 5px; */
+	 color: #000;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+ }
+ .project-10i .pharmacy-filter {
+    background: #eef7f2;
+}
+.project-10i .yellow-box {
+	  background: #fcf1aa;
+	  border: 1px dashed #000;
+	  padding: 0px 5px;
+  }
+  .project-10i .dualheader-table2.table tbody tr:hover {
+	 background: #fffece;
+ }
+.project-10i .dualheader-table2.table tbody tr.odd:first-child{
+	border-top-width: 0px;
+}
+ project-10i .dualheader-table2.table tbody tr.odd {
+	 background: #e2eaeb;
+	 border: 1px solid #bbb;
+ }
+ .project-10i .dualheader-table2.table tbody tr.even {
+	 background: #fff;
+	 border: 1px solid #bbb;
+ }  
+ .project-10i .dualheader-table2.table tbody tr.odd:hover {
+	 background: #fffece !important;
+ }
+ .project-10i .dualheader-table2.table tbody tr.even:hover {
+	 background: #fffece !important;
+ }
+.project-10i .dualheader-table2 tbody tr td:first-child input[type="checkbox"]{
+	margin-top: 15px;
+}
+.project-10i .yellow-box {
+	  background: #fcf1aa;
+	  border: 1px dashed #000;
+	  padding: 0px 5px;
+  }
+ .project-10i .main-dualheaderdiv.table {
+	 margin-bottom: 0px;
+	 width: 100%;
+ }
+ .project-10i .main-dualheaderdiv .table>tbody>tr>td {
+	 padding: 0;
+	 font-size: 11px;
+	 color: #000;
+	 font-weight: 600;
+	 border-color: #dddee5;
+	 text-overflow:ellipsis;
+	 overflow: hidden;
+	 white-space: nowrap;
+
+ }
+.success {
+ background-color: #80e2a5 !important; 
+} 
+.failed{
+ background-color: #ef6b6b !important; 
+} 
+.project-10i .facilityellipse {
+	 width: 80%;
+	 display: block;
+	 height: 25px;
+	 color: #000;
+	 overflow: hidden;
+	 text-overflow: ellipsis;
+	 white-space: nowrap;
+ }

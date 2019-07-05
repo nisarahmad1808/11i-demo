@@ -1,0 +1,45 @@
+<button class="btn btn-lgrey btn-xs rxEduIcon" 
+		data-toggle="modal" 
+		data-target="#rxEducationModal"
+		ng-click="rxEducationCtrl.loadRxEducationDetails()" style="margin-left: 8px">{{rxEducationCtrl.title}}</button>
+
+<div class="modal fade out" data-backdrop="false" aria-hidden="false" id="rxEducationModal" ng-if="rxEducationCtrl.modalopen">
+	<div class="modal-dialog">
+		<div class="modal-content  global-property">
+			<div class="modal-header">
+    			<h4 class="pull-left">
+    				<b> <span id="rxName" ng-init="rxEducationCtrl.setDrugDesc()"> </span> </b> 
+    			</h4>
+				<div class="pull-right">
+				
+					<button type="button" class="close rxEduClose" ng-click="rxEducationCtrl.close()" aria-hidden="true">&times;</button>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+			<div class="modal-body rxedu"> 
+				<div class = "row nomargin">
+					<div class="col-sm-12"  id="rxEduData" perfect-scrollbar> </div>
+				</div>
+			</div>
+
+			<div class="modal-footer nopadding" ng-if="rxEducationCtrl.hasData">
+				<table style="float:right; width:14% !important">
+					<tr>
+						<td width="50%"> 
+							<print-button show-preview = "true" unique-id="rxEducationPrint" print-label="Print" print-data-destination="rxEducationCtrl.print.destination" format="rxEducationCtrl.print.format" module="pharmacy" masterencounter-id="rxEducationCtrl.masterEncounterId" patient-id="rxEducationCtrl.patientId" plain-data="rxEducationCtrl.print.rxEducationData"></print-button>
+						</td>
+						<td width="50%" style="padding:5px;"> 
+							<button type="button" class="btn btn-blue btn-xs" ng-click="rxEducationCtrl.close()">Cancel</button>
+						</td>
+					</tr>
+				</table>	
+			</div>
+		</div>
+	</div>
+</div>
+
+<link rel="stylesheet" href="/mobiledoc/jsp/inpatientWeb/staticContent/pharmacy/rxEducation/css/RxEducation.css">
+
+	
+

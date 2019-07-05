@@ -1,0 +1,183 @@
+ .project-10i #select-temp-drop-pending {
+     position: absolute;
+     background: #fff;
+     z-index: 9;
+     width: 225px;
+     height: auto;
+     border-radius: 3px;
+ }
+ 
+ .project-10i .table-titlebg table th {
+     background: #dcdcdc;
+ }
+ 
+ .project-10i .table-titlebg table th {
+     border: 1px solid #c0bfbf;
+     background: #dcdcdc;
+     padding: 4px 7px;
+     text-align: left;
+     font-size: 11px;
+ }
+ 
+ .project-10i .table-data table tbody tr td {
+     border: 1px solid rgb(237, 237, 237);
+     color: black;
+     height: 25px;
+     padding: 3px;
+     font-weight: 600;
+     font-size: 11px;
+     text-transform: capitalize;
+ }
+ 
+ .project-10i .allMultiTableBody table th {
+     border: 1px solid rgb(237, 237, 237);
+     background: rgb(243, 247, 251);
+ }
+ 
+ .project-10i .table-data table tbody tr td {
+     border: 1px solid rgb(237, 237, 237);
+     color: black;
+     height: 25px;
+     padding: 3px;
+     font-weight: 600;
+     font-size: 11px;
+     text-transform: capitalize;
+ }
+ 
+ .project-10i .table-right-arrow {
+     height: 23px!important;
+ }
+ 
+ .project-10i .assign-div1 {
+     background: #fff;
+     position: absolute;
+     width: 325px;
+     z-index: 999;
+     display: none;
+     left: 0px;
+     top: 41px;
+ }
+ 
+ .project-10i #ph-pending-filter1 .phrm_look {
+     width: 238px;
+ }
+ 
+ .project-10i #ph-pending-filter1 .drugdropdown {
+     width: 206px !important;
+ }
+ 
+ .project-10i .phrm_look .drugsubclass li {
+     font-size: 11px;
+     padding: 5px 10px!important;
+     font-weight: 600;
+     cursor: pointer;
+ }
+ 
+ .project-10i .phrm_look .drugsubclass li:hover {
+     background: #09a55c;
+     color: #fff;
+ }
+ /* Yellow prompt */
+ 
+ .project-10i .proceed-prompt.collection-prompt {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     width: 375px;
+     font-size: 15px;
+     text-align: center;
+     font-weight: 600;
+     transform: translate(-50%, -50%);
+     -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+     -o-transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
+ }
+ 
+ .project-10i .proceed-prompt.collection-prompt .left-prompt {
+     width: 62px;
+ }
+ 
+ .project-10i .proceed-prompt.collection-prompt#removedmsg .left-prompt {
+     width: 43px;
+     background-color: #badc52;
+     border-right: 1px solid #afc470;
+ }
+ 
+ .project-10i .proceed-prompt.collection-prompt .prompt-message {
+     padding-top: 20px;
+ }
+ 
+ .project-10i table tbody.collapseclass.in,
+ .project-10i table tbody.collapseclass.collapsing {
+     display: table-row-group !important;
+     float: none;
+ }
+ .project-10i .w52{
+     width: 52px;
+ }
+ .project-10i .w206{
+     width: 206px;
+ }
+  .project-10i .nobg{
+     background: none!important;
+ }
+ /* custom info popup styles  */
+
+.project-10i .info-popup {
+    background: #fff;
+    text-align: left;
+    border-radius: 2px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+    width: 265px;
+    position: absolute;
+    white-space: initial;
+     z-index: 999;
+     max-height: 120px;
+     height:auto;
+}
+
+.project-10i .value-row-arrow {
+    position: absolute;
+    background: #fff;
+ }
+.project-10i .value-row-arrow:after, .project-10i .value-row-arrow:before {
+    right: 100%;
+    top: 20%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.project-10i .value-row-arrow:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #fff;
+    border-width: 9px;
+    margin-top: -9px;
+}
+.project-10i .value-row-arrow:before {
+    border-color: rgba(221, 221, 221, 0);
+    border-right-color: #ddd;
+    border-width: 10px;
+    margin-top: -10px;
+}
+.project-10i .browsstyle{
+    background: #f2f2f2!important;
+    height: 24px;
+    border-left: 1px solid #d4d2d2!important;
+}
+.project-10i #order-details-table-body table tbody tr td:nth-child(9){
+   background: #fffece !important;
+}
+ 
+.project-10i .w25p {
+    width: 25% !important;
+}
+
+.project-10i .brdrleft {
+	border-radius: 0;
+	border-left: 1px solid #ddd !important;
+}

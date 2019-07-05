@@ -1,0 +1,275 @@
+ .project-10i .w90 {
+     width: 90px;
+ }
+ .project-10i .w80 {
+     width: 80px;
+ }
+ .project-10i .w182 {
+     width: 182px;
+ }
+ .project-10i .main-dualheaderdiv.table {
+     margin-bottom: 0px;
+     width: 100%;
+ }
+ .project-10i .main-dualheaderdiv .table>tbody>tr>td {
+     padding: 0;
+     font-size: 11px;
+     color: #000;
+     font-weight: 600;
+     border-color: #dddee5;
+ }
+ .project-10i .dualheader-table1 > thead > tr > th {
+     padding: 0px !important;
+     font-weight: 600;
+     font-size: 11px;
+     border: 1px solid #404749;
+ }
+ .project-10i .dualheader-table1.table-bordered {
+     border: 1px solid transparent;
+ }
+ .project-10i .w26 {
+     width: 26px;
+ }
+ .project-10i .main-dualheaderdiv .table thead {
+     background: #565e60;
+     color: #fff;
+ }
+ .project-10i .dualheader-table2.table tbody tr:hover {
+     background: #fffece;
+ }
+ .project-10i .dualheader-table2.table tbody tr.odd {
+     background: #e2eaeb;
+     border: 2px solid #dddee5;
+ }
+ .project-10i .dualheader-table2.table tbody tr.even {
+     background: #fff;
+     border: 2px solid #dddee5;
+ }
+ .project-10i .dualheader-table2.table tbody tr.odd:hover {
+     background: #fffece!important;
+ }
+ .project-10i .dualheader-table2.table tbody tr.even:hover {
+     background: #fffece!important;
+ }
+ .project-10i .upper {
+     width: 100%;
+     display: block;
+     height: 30px;
+     padding: 5px;
+     cursor: pointer;
+     font-weight: 700;
+ }
+ .project-10i .lower {
+     width: 100%;
+     display: block;
+     height: 30px;
+     border-top: 1px solid #404749;
+     padding: 5px;
+     cursor: pointer;
+     font-weight: 700;
+ }
+ .project-10i .lower div {
+     display: inline-block;
+     float: left;
+     text-align: center;
+ }
+ .project-10i .lower div.age {
+     width: 25%;
+     text-align: left;
+ }
+ .project-10i .lower div.gender {
+     width: 30%;
+     text-align: left;
+ }
+ .project-10i .lower div.mrn {
+     width: 45%;
+     text-align: left;
+ }
+ .project-10i .upper div {
+     display: inline-block;
+     float: left;
+     text-align: left;
+ }
+ .project-10i .upper div.order-status {
+     width: 65%;
+ }
+ .project-10i .upper div.priority {
+     width: 35%;
+ }
+ .project-10i .checkbox-class {
+     height: 50px;
+     vertical-align: middle;
+     padding: 10px;
+ }
+ .project-10i .w202 {
+     width: 2%;
+ }
+ .project-10i .tdupper a {
+     color: #000;
+ }
+ .project-10i .tdupper {
+     width: 100%;
+     display: block;
+     height: 25px;
+     padding: 5px;
+     color: #000;
+ }
+ .project-10i .tdlower {
+     width: 100%;
+     display: block;
+     height: 25px;
+     border-top: 1px solid #c5ced0;
+     padding: 5px;
+     color: #000;
+ }
+ .project-10i .tdupper div {
+     display: inline-block;
+     float: left;
+     text-align: left;
+ }
+ .project-10i .light-bluebk {
+     background: #84e8fa;
+     color: #000;
+ }
+ .project-10i .light-yellowbk {
+     background: #f4f3b7;
+     color: #000;
+ }
+ .project-10i .light-pinkbk {
+     background: #fa8484;
+     color: #fff;
+ }
+ .project-10i .grey-circltxt {
+     background: #9b9b9b;
+     color: #fff;
+     border-radius: 20px;
+     padding: 1px 6px;
+ }
+ .project-10i .hgt33 {
+     height: 33px;
+ }
+ .project-10i .asc-sort {
+     background: url(/mobiledoc/inpatientWeb/assets/img//asc-sort.png) no-repeat;
+     height: 6px;
+     width: 10px;
+     cursor: pointer;
+ }
+  .project-10i .asc-sort-hover {
+     background: url(/mobiledoc/inpatientWeb/assets/img//asc-sort-hover.png) no-repeat;
+     height: 6px;
+     width: 10px;
+     cursor: pointer;
+ }
+
+ .project-10i .des-sort {
+     background: url(/mobiledoc/inpatientWeb/assets/img//des-sort.png) no-repeat;
+     height: 6px;
+     width: 10px;
+     cursor: pointer;
+ }
+ .project-10i .des-sort-hover {
+     background: url(/mobiledoc/inpatientWeb/assets/img//des-sort-hover.png) no-repeat;
+     height: 6px;
+     width: 10px;
+     cursor: pointer;
+ }
+.project-10i .sort-posi > i.icon-left {
+     display:none;
+ }
+ .project-10i .sort-posi >i.asc-sort {
+     position: absolute;
+     top: 10px;
+     right: 3px;
+     visibility: hidden;
+ }
+ .project-10i .sort-posi >i.des-sort {
+     position: absolute;
+     bottom: 5px;
+     right: 3px;
+     visibility: hidden;
+ }
+.sort-posi > i.visible-icon {
+        visibility: visible !important;
+}
+
+
+.project-10i .dualheader-table1 thead tr th .upper:hover .sort-posi >i.des-sort {
+     visibility: visible;
+ }
+.project-10i .dualheader-table1 thead tr th .upper.active .sort-posi >i.des-sort {
+     visibility: visible;
+ }
+ .project-10i .dualheader-table1 thead tr th .upper:hover .sort-posi >i.asc-sort {
+     visibility: visible;
+ }
+.project-10i .dualheader-table1 thead tr th .upper.active .sort-posi >i.asc-sort {
+     visibility: visible;
+ }
+ .project-10i .dualheader-table1 thead tr th .lower:hover .sort-posi >i.des-sort {
+     visibility: visible;
+ }
+.project-10i .dualheader-table1 thead tr th .lower.active .sort-posi >i.des-sort {
+     visibility: visible;
+ }
+ .project-10i .dualheader-table1 thead tr th .lower:hover .sort-posi >i.asc-sort {
+     visibility: visible;
+ }
+.project-10i .dualheader-table1 thead tr th .lower.active .sort-posi >i.asc-sort {
+     visibility: visible;
+ }
+.project-10i .lower div {
+    display: inline-block;
+    float: left;
+    text-align: left;
+}
+ .project-10i .dualheader-table2.table tbody tr.highlight-row td {
+     background: #f5ebb6!important;
+     border-top: 1px solid #dad9a4 !important;
+     border-bottom: 1px solid #dad9a4 !important;
+     border-right: 1px solid #dad9a4 !important;
+ }
+ .project-10i .footer-posi {
+     position: absolute;
+     right: 10px;
+ }
+ .project-10i .progressbar-div {
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     left: 0;
+ }
+ .project-10i .pro-bar {
+     height: 7px;
+ }
+ .project-10i .eg-block {
+     float: left;
+     height: 100%;
+ }
+ .project-10i .dualheader-table2.table-bordered {
+     border: 0px!important;
+ }
+ .project-10i .pro-bar {
+     width: 100%
+ }
+ .project-10i .seg-block.green {
+     background-color: #09a55c;
+     height: 7px;
+     margin-right: 1px;
+ }
+ .project-10i .seg-block.red {
+     background-color: #ed5756;
+     height: 7px;
+     margin-right: 1px;
+ }
+ .project-10i .seg-block.yellow {
+     background-color: #f9f730;
+     height: 7px;
+     margin-right: 1px;
+ }
+ .project-10i .seg-block {
+     background-color: #dcdcdc;
+     width: 100%;
+     margin-right: 1px;
+     height: 7px;
+     float: left;
+ }

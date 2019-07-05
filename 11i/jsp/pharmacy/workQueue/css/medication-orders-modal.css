@@ -1,0 +1,831 @@
+.project-10i #new-drug-interaction-modal {
+	z-index: 1112;
+}
+.project-10i .green-icon {
+	background: #09a55c;
+	color: #fff;
+	font-size: 11px;
+	text-align: center;
+	display: inline-block;
+	width: 17px;
+	height: 16px;
+	border-radius: 100%;
+}
+.project-10i .red-icon {
+	background: #ec4c41;
+	color: #fff;
+	font-size: 11px;
+	text-align: center;
+	display: inline-block;
+	width: 17px;
+	height: 16px;
+	border-radius: 100%;
+}
+
+/*Start css for lisinopril table*/
+
+.project-10i .dark-grey-btn {
+	background: #8b8b8b;
+	color: #fff;
+	font-size: 10px;
+	font-weight: 600;
+	padding: 0 3px;
+	border-radius: 5px;
+	border: none;
+	text-align: center;
+	line-height: 15px;
+}
+.project-10i .medctn-order-table {
+	height: 376px;
+}
+.project-10i .medctn-order-table .select-box {
+	border: none;
+	background: #fff8f5;
+	height: 21px;
+}
+.project-10i .overflow-hide {
+	overflow: hidden !important;
+	text-overflow: ellipsis !important;
+}
+.project-10i .schedule-popup tr td.feild-bg,
+.project-10i .edit-products-popup tr td.feild-bg,
+.project-10i .medctn-order-table tr td.feild-bg,
+.project-10i .schedule-table tr td.feild-bg{
+	background: #fff8f5 !important;
+}
+.project-10i .simpleTable.schedule-table .table-bordered>tbody>tr:hover>td{
+background: #fff8f5 !important;
+}
+.project-10i .med-orders .tablebody .det-view .form-group input[type="text"] {
+	border: none;
+	height: 21px;
+	background-color: #fff8f5;
+	padding: 1px 9px 1px 0px;
+}
+.project-10i .med-orders .tablebody .det-view .form-group input[type="text"].bg-clr {
+	background-color: #fff;
+}
+.project-10i .medctn-order-table .det-view .form-group .input-group-btn .btn {
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
+}
+.project-10i .medctn-order-table .det-view .form-group .input-group-addon {
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
+}
+.project-10i .time-icon {
+	background: url(/mobiledoc/jsp/inpatientWeb/staticContent/img/IP-clock-icon.png) no-repeat;
+	width: 13px;
+	height: 13px;
+	margin-top: -1px;
+}
+.project-10i .med-orders .tablebody .selection-field {
+	display: block;
+	height: 22px;
+	padding: 0px;
+}
+.project-10i .pl5 {
+	padding-left: 5px !important;
+}
+.project-10i .icon-pharmacy-interventions.greenico {
+	color: #09a55c;
+	font-size: 15px;
+	margin-left: 5px;
+}
+.project-10i .icon-pharmacy-interventions.red {
+	color: #ec4c41;
+	font-size: 15px;
+	margin-left: 5px;
+}
+.project-10i .plus-icon {
+	content: "\e83d";
+}
+.project-10i .medctn-order-table .icon-green-expand.collapsed:before {
+	color: #707070;
+}
+.project-10i .medctn-order-table .icon-green-expand.minschedule:before {
+	color: #707070;
+}
+.project-10i .medication-orders-list {
+	height: 459px;
+}
+.project-10i .medication-orders-list li a {
+	color: #000;
+	text-decoration: none;
+}
+.project-10i .med-orders .tablebody .det-view .form-group.selectionbox input[type="text"] {
+	border: 1px solid #b6b5b5;
+	height: 24px;
+	background-color: #fff;
+	padding: 1px 9px 1px 5px;
+}
+.project-10i .med-orders .tablebody .selectionbox .selection-field {
+	display: block;
+	height: 22px;
+	padding: 1px 6px;
+}
+.project-10i .vital-tab-right-panel {
+	position: absolute;
+	width: 400px;
+	right: -400px;
+	background: #fff;
+	border: 1px solid #ddd;
+	z-index: 989;
+	height: 592px;
+}
+.project-10i .yellow-btn {
+	background: #f4f2a8 !important;
+	color: #000;
+}
+.project-10i .red-btn {
+	background: #fe8079 !important;
+	color: #fff !important;
+}
+.project-10i .icon-charges {
+	font-size: 15px;
+	color: #8b8b8b;
+}
+.project-10i .icon-schedule-change {
+	font-size: 15px;
+	color: #8b8b8b;
+}
+.project-10i .icon-dual-verification {
+	font-size: 15px;
+	color: #8b8b8b;
+}
+.project-10i .savepending {
+	width: 300px;
+	margin-right: 30px;
+	bottom: 31px;
+}
+.project-10i .savepending-arrow {
+	background: #fff;
+	border: 1px solid #ddd;
+}
+.project-10i .savepending-arrow:after,
+.savepending-arrow:before {
+	top: 100%;
+	left: 75%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.project-10i .savepending-arrow:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-top-color: #fff;
+	border-width: 8px;
+	margin-left: -8px;
+}
+.project-10i .savepending-arrow:before {
+	border-color: rgba(221, 221, 221, 0);
+	border-top-color: #ddd;
+	border-width: 9px;
+	margin-left: -9px;
+}
+.project-10i .icon-patient-own-medication.leftpan {
+	font-size: 12px;
+}
+.project-10i .nowrapnormal {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.project-10i .one-line-text {
+	color: #000;
+	border: none;
+	padding: 0px;
+	height: 18px;
+	font-size: 11px;
+	background: #fff8f5 !important;
+	border-radius: 0px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.project-10i .two-line-text {
+	color: #000;
+	border: none;
+	padding: 0px;
+	height: 42px;
+	font-size: 11px;
+	background: #fff8f5 !important;
+	border-radius: 0px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.project-10i .three-line-text {
+	color: #000;
+	border: none;
+	padding: 0px;
+	height: 62px;
+	font-size: 11px;
+	background: #fff8f5 !important;
+	border-radius: 0px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.project-10i .dispenseinfo {
+	position: absolute;
+	background: #fff;
+	z-index: 9;
+	border: 1px solid #ddd;
+	width: 300px;
+}
+.dispenseinfo-arrow {
+	background: #fff;
+	border: 1px solid #ddd;
+}
+.dispenseinfo-arrow:after,
+.dispenseinfo-arrow:before {
+	bottom: 100%;
+	left: 10%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.dispenseinfo-arrow:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #fff;
+	border-width: 9px;
+	margin-left: -9px;
+}
+.dispenseinfo-arrow:before {
+	border-color: rgba(221, 221, 221, 0);
+	border-bottom-color: #ddd;
+	border-width: 10px;
+	margin-left: -10px;
+}
+.project-10i .large-modal .modal-dialog {
+	width: 1300px;
+}
+
+/*end css for lisinopril table*/
+
+.project-10i .brdrtopfirst:first-child {
+	border-top: 1px solid #ddd;
+}
+.project-10i .icon-verified {
+	background: url(/mobiledoc/jsp/inpatientWeb/staticContent/img/verified-tick.png) no-repeat;
+	width: 10px;
+	height: 9px;
+}
+.project-10i .icon-verified {
+	display: none;
+}
+
+/*
+.project-10i #mediOrderModal .simpleTable .table-bordered>tbody>tr:hover>td {
+    background: #fff8f5!important;
+}
+*/
+
+.project-10i .medctn-order-table .simpleTable tr:not(.dispense-tr):hover td:nth-child(2),
+.project-10i .medctn-order-table .simpleTable tr:hover td:nth-child(4),
+.project-10i .medctn-order-table .simpleTable tr:hover td:nth-child(6) {
+	background: #fff8f5!important;
+}
+.project-10i #mediOrderModal .medctn-order-table .simpleTable .dispense-table tr:hover td:nth-child(2),
+.project-10i #mediOrderModal .medctn-order-table .simpleTable .dispense-table tr:hover td {
+	background: #fffece!important;
+}
+.project-10i .medctn-order-table .simpleTable tr:hover td:nth-child(1),
+.project-10i .medctn-order-table .simpleTable tr:hover td:nth-child(3),
+.project-10i .medctn-order-table .simpleTable tr:hover td:nth-child(5) {
+	background: #fff!important;
+}
+.project-10i #mediOrderModal .simpleTable .btn-default {
+	background-color: #fff8f5;
+}
+.project-10i #mediOrderModal .simpleTable .input-group-addon:last-child {
+	background: #fff8f5;
+}
+.project-10i #mediOrderModal .simpleTable .table-bordered>tbody>tr>td {
+	text-overflow: inherit !important;
+}
+.project-10i ul.category-list li.selected {
+	background: #d0f3e3 !important;
+}
+.project-10i .linehgt20 {
+	height: 21px !important;
+}
+.project-10i .linehgt21 {
+	height: 21px !important;
+}
+.project-10i #mediOrderModal input[type=radio],
+.project-10i #mediOrderModal input[type=checkbox] {
+	margin: 3px 0px -2px;
+	margin-top: 1px 9;
+	line-height: normal;
+}
+.project-10i #mediOrderModal .det-view .form-group .input-group-addon {
+	padding: 0px 4px;
+	border-left: none;
+}
+.project-10i .brdr-right6 {
+	border-right: 6px solid #ddd;
+}
+.project-10i .pr5 {
+	padding-right: 5px !important;
+}
+
+/*
+.project-10i #medication-profile .medctn-order-table .icon-info2 {
+    font-size: 16px;
+    color: rgb(170, 170, 170) !important;
+    
+}
+*/
+
+.project-10i .simpleTable .table-bordered>tbody>tr>td .icon-info2 {
+	font-size: 13px;
+	color: rgb(170, 170, 170) !important;
+}
+.project-10i .proceed-prompt.locked {
+	position: absolute;
+	width: 405px;
+	height: auto;
+	z-index: 9999;
+	background: #fff;
+	box-shadow: 0px 0px 5px #AEADAD;
+}
+.project-10i .proceed-prompt.locked .prompt-message {
+	width: 87%;
+}
+.project-10i .proceed-prompt .left-prompt {
+	width: 55px;
+	height: 100%;
+	border-right: 1px solid #d3c980;
+	background: #f4db30;
+	/*display: table-cell;*/
+	vertical-align: middle;
+	/*float: none;*/
+}
+.project-10i .proceed-prompt .prompt-message {
+	padding: 10px 0px;
+	font-size: 13px;
+	height: 100%;
+	display: table-cell;
+	float: none;
+}
+.project-10i #logsDetailTable {
+	height: 498px;
+}
+.project-10i #mediOrderModal .simpleTable #logsDetailTable .table-bordered>tbody>tr>td {
+	text-overflow: ellipsis !important;
+	overflow: hidden;
+}
+.project-10i #mediOrderModal .simpleTable #logsDetailTable tr:hover td {
+	background: #fffece!important;
+}
+.project-10i #mediOrderModal .medication-tab-panes .det-view .form-group .input-group-btn .btn {
+	padding: 1px 8px 1px 5px;
+}
+.project-10i .w258 {
+	width: 258px !important;
+}
+.project-10i #hex1 {
+	width: 17px;
+	height: 16px;
+}
+.project-10i #color-green {
+	background-color: #09a55c;
+}
+.project-10i #color-blue {
+	background-color: #134e66;
+}
+.project-10i .hexagon-wrapper {
+	text-align: center;
+	margin: 15px 2px 0px 0px;
+	position: relative;
+	display: inline-block;
+}
+.project-10i .hexagon {
+	height: 100%;
+	width: calc(100% * 0.57735);
+	display: inline-block;
+}
+.project-10i .hexagon:before {
+	position: absolute;
+	top: 0;
+	right: calc((100% / 2) - ((100% * 0.57735) / 2));
+	background-color: inherit;
+	height: inherit;
+	width: inherit;
+	content: '';
+	transform: rotateZ(60deg);
+}
+.project-10i .hexagon:after {
+	position: absolute;
+	top: 0;
+	right: calc((100% / 2) - ((100% * 0.57735) / 2));
+	background-color: inherit;
+	height: inherit;
+	width: inherit;
+	content: '';
+	transform: rotateZ(-60deg);
+}
+.project-10i .hex-label {
+	margin: 13px 0px 0px 6px;
+	position: absolute;
+	color: white;
+	z-index: 999;
+	font-size: 10px;
+}
+.project-10i #change-order-prompt {
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	font-weight: 600;
+}
+.project-10i .textbrdr {
+	border: 1px solid #ddd !important;
+}
+.project-10i .bgtransp {
+	background: transparent !important;
+}
+.project-10i .inpatient-order-table .hex-label {
+	margin: 0px 0px 0px 6px;
+}
+.project-10i .inpatient-order-table .hexagon-wrapper {
+	margin: 2px 0px 0px 0px !important;
+}
+.project-10i .legends #hex1 {
+	width: 13px;
+	height: 13px;
+}
+.project-10i .legends .tag {
+	font-size: 11px;
+	font-weight: 500;
+	color: #938f8f;
+}
+.project-10i .legends strong {
+	font-weight: 700;
+}
+.project-10i .meds-applied-filter {
+	width: 37%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.project-10i .lisinopril-tbody {
+	height: 385px;
+}
+.project-10i .edit-products-popup {
+	position: absolute;
+	background: #fff;
+	border: 1px solid #ddd;
+	width: 1150px;
+	padding-top: 10px;
+	display: none;
+	z-index: 999;
+}
+.project-10i .edit-products-popup:after,
+.project-10i .edit-products-popup:before {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.project-10i .edit-products-popup:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-left-color: #fff;
+	border-width: 7px;
+	margin-top: -7px;
+}
+.project-10i .edit-products-popup:before {
+	border-color: rgba(221, 221, 221, 0);
+	border-left-color: #ddd;
+	border-width: 8px;
+	margin-top: -8px;
+}
+.project-10i .popup-footer {
+	border-top: 2px solid #ddd;
+	padding: 10px 15px;
+}
+
+/*.project-10i .schedule-popup .simpleTable .table-bordered>tbody>tr:hover>td:not(:first-child),
+.project-10i .edit-products-popup .simpleTable .table-bordered>tbody>tr:hover>td:not(:first-child) {
+    background: #fff8f5 !important;
+}*/
+
+
+/*.project-10i .schedule-popup .simpleTable .table-bordered>tbody>tr:hover>td:first-child,
+.project-10i .edit-products-popup .simpleTable .table-bordered>tbody>tr:hover>td:first-child {
+    background: transparent !important;
+}*/
+
+.project-10i .schedule-popup {
+	position: absolute;
+	background: #fff;
+	border: 1px solid #ddd;
+	width: 230px;
+	padding-top: 10px;
+	display: none;
+	z-index: 999;
+}
+.project-10i .schedule-popup:after,
+.project-10i .schedule-popup:before {
+	bottom: 100%;
+	left: 95%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.project-10i .schedule-popup:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #fff;
+	border-width: 8px;
+	margin-left: -8px;
+}
+.project-10i .schedule-popup:before {
+	border-color: rgba(221, 221, 221, 0);
+	border-bottom-color: #ddd;
+	border-width: 9px;
+	margin-left: -9px;
+}
+.project-10i .schedule-popup .input-group-addon.linehgt21 {
+	border: 0;
+}
+.project-10i .total-tr td {
+	font-weight: 700 !important;
+}
+
+/*Billing Data*/
+
+.project-10i .btn-chargecode {
+	border-radius: 0;
+	border-left: 0 !important;
+}
+.project-10i .billing-chargecode-hgt tr td .icon-abstract-unlock:before,
+.project-10i .billing-chargecode-hgt tr td .icon-Secure:before {
+	color: #7e7e7e;
+}
+.project-10i #showBillingDataModal .billing-chargecode-hgt {
+	height: 400x;
+	padding-bottom: 10px;
+}
+.project-10i .addcharge-tablehgt {
+	height: 379px;
+	padding-bottom: 10px;
+}
+.project-10i .selected-charges-sec {
+	background: #eeeeee;
+	border-left: 1px solid #ddd;
+	padding: 0px 15px 10px 15px;
+	height: 485px;
+}
+.project-10i .selected-charges-table {
+	height: 415px;
+}
+.project-10i .add-charges-section {
+	display: none;
+}
+.project-10i .simpleTable .addcharge-tablehgt .table-bordered>tbody>tr>td .icon-inter-starsm {
+	visibility: hidden;
+}
+.project-10i .simpleTable .addcharge-tablehgt .table-bordered>tbody>tr:hover>td .icon-inter-starsm {
+	visibility: visible;
+}
+.project-10i .w315 {
+	width: 315px !important;
+}
+.project-10i .simpleTable .addcharge-tablehgt .table-bordered>tbody>tr>td .icon-inter-starsm.active {
+	visibility: visible;
+}
+.project-10i .icon-inter-starsm:before {
+	content: "\e855";
+	font-size: 12px;
+	color: #908e8e;
+}
+.project-10i .icon-inter-starsm.active:before {
+	content: "\e85a";
+	font-size: 12px;
+	color: #dac430;
+}
+.project-10i .dispense-table {
+	height: 74px;
+}
+.project-10i .greybg-top {
+	background: #f2f2f2;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 8px 0px;
+}
+.project-10i .padlr15 {
+	padding: 0px 15px;
+}
+.project-10i .feild-bg {
+	background: #fff8f5!important;
+}
+.project-10i .det-view .form-group textarea.hgt55 {
+	height: 55px!important;
+}
+.project-10i .proceed-prompt .left-prompt {
+    width: 55px;
+    height: 100%;
+    border-right: 1px solid #d3c980;
+    background: #f4db30;
+    display: table-cell;
+    vertical-align: middle;
+     float: none;
+}
+.project-10i .complex-iv.table-scroll-hgt{
+	height: 82px;
+}
+.project-10i .table-scroll-hgt {
+	height: 122px;
+}
+.project-10i .icon-er-clock:before {
+	line-height: 11px;
+}
+.project-10i .txtorange {
+	color: #fa9600
+}
+.project-10i .text-red {
+	color: #f00;
+}
+.project-10i .iconset2-major {
+	font-size: 20px;
+	margin-left: 20px;
+	margin-right: 5px;
+}
+.project-10i .icon-info2 {
+	color: #767575;
+}
+.project-10i .hexagon-box {
+	float: right;
+	display: inline-block;
+	margin-top: 5px;
+}
+.project-10i .dispense {
+	display: inline-block;
+}
+.project-10i .greybg-top .checkbox-inline input[type=checkbox] {
+	float: none!important;
+	margin: 2px 0px -2px!important;
+	position: relative;
+}
+.project-10i .schedule-table-scroll{height: 75px;}
+.project-10i .hgt33{height: 33px;}
+
+.txtarea-hgt78{
+	height: 50px !important;
+	line-height: 14px !important;
+}
+.project-10i .edit-products-popup .tablebody{
+	height: 260px;
+}
+
+.project-10i #mediOrderModal .simpleTable .table-bordered>tbody>tr>td.brdrtop2{
+	font-weight: 700;
+}
+.project-10i .med-orders .tablebody.schedule-table-scroll .det-view .form-group input[type="text"].day-with-datetime-input{
+	padding: 1px 0px 1px 0px;
+}
+.project-10i #mediOrderModal .simpleTable .schedule-table-scroll .table-bordered>tbody>tr>td{
+	padding: 1px 10px 1px 7px;
+}
+.project-10i .width-825 {
+	width: 825px;
+}
+.project-10i .width-1124 {
+	width: 1124px;
+}
+.project-10i #mediOrderModal .simpleTable .complex-iv .table-bordered>tbody>tr>td.wrap-txt,
+.project-10i #mediOrderModal .simpleTable .iv .table-bordered>tbody>tr>td.wrap-txt,
+.project-10i #mediOrderModal .simpleTable .drug .table-bordered>tbody>tr>td.wrap-txt{
+	white-space: initial;
+	/* vertical-align: middle; */
+	line-height: 18px;
+	white-space: normal !important;
+}
+
+.project-10i #mediOrderModal .tablebody .table-bordered>tbody>tr>td.wrap-txt
+{
+	white-space: initial;
+	/* vertical-align: middle; */
+	line-height: 18px;
+	white-space: normal !important;
+}
+.project-10i .proceed-prompt.collection-prompt {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 375px;
+	font-size: 15px;
+	text-align: center;
+	font-weight: 600;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+ }
+ .project-10i .label-bold{
+ 	font-weight: 800 !important;
+ }
+ .project-10i .priority-red {
+     background: #fa8484;
+     height: auto;
+     width: auto;
+     color: #000;
+     text-transform: uppercase;
+     font-size: 11px;
+     border-radius: 3px;
+     font-family: "Open Sans";
+     font-weight: 400;
+     text-align: center;
+     font-style: normal;
+     padding: 1px 5px;
+     vertical-align: middle;
+     margin-top: 0px;
+ }
+
+ .project-10i .priority-gray {
+     background: #686767;
+     height: auto;
+     width: auto;
+     color: #fff;
+     font-size: 11px;
+     border-radius: 3px;
+     font-family: "Open Sans";
+     font-weight: 400;
+     text-align: center;
+     font-style: normal;
+     padding: 1px 5px;
+     vertical-align: middle;
+     margin-top: 0px;
+ }
+
+ .project-10i .priority-yellow {
+     background: #d7ac00;
+     height: auto;
+     width: auto;
+     color: #000;
+     font-size: 11px;
+     border-radius: 3px;
+     font-family: "Open Sans";
+     font-weight: 400;
+     text-align: center;
+     font-style: normal;
+     padding: 1px 5px;
+     vertical-align: middle;
+     margin-top: 0px;
+ } 
+ .project-10i .icon-info-schedule:before {
+    content: "\e91c";
+	font-size: 15px;
+	color: rgb(170, 170, 170) !important;
+}
+.project-10i .schedule-info {
+	background: #fff;
+	border: 1px solid #ddd;
+	width:362px;
+	padding: 10px 0;
+	position: absolute;
+	top: -188px;
+    left: 176px;
+	z-index: 9999;
+	box-shadow: rgb(0, 0, 0, 0.2) 0px 0px 10px 1px;
+}
+.project-10i .schedule-info-arrow:after, 
+.project-10i .schedule-info-arrow:before {
+	right: 100%;
+	top: 52%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.project-10i .schedule-info-arrow:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-right-color: #fff;
+	border-width: 9px;
+	margin-top: -9px;
+}
+.project-10i .schedule-info-arrow:before {
+	border-color: rgba(221, 221, 221, 0);
+	border-right-color: #ddd;
+	border-width: 10px;
+	margin-top: -10px;
+}
+.project-10i .schedule-info .tablebody{
+	height: 289px;
+}

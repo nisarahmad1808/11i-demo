@@ -1,0 +1,106 @@
+<div ng-app ="interventionModule" ng-controller="interventionTabCtrl as vm" ng-init="vm.initialize()">
+    <div class="row nomargin">
+	<div class="col-sm-12">
+		<div class="det-view">
+			<div class="col-sm-3" ng-hide="true">
+				<div class="form-group nomargin clearfix">
+					<label class="col-sm-3 nopadding control-label mt3">Entered By</label>
+					<div class="col-sm-9 nopadding">
+						<div class="select-box">
+							<b class="caret selection-click"></b>
+							<span class="selection-field selection-click">All</span>
+							<ul class="sel-optn selection-options int-type">
+								<li>All</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3 nopadleft" ng-hide="true">
+				<div class="form-group nomargin clearfix">
+					<label class="control-label nopadtop mt3 col-sm-2">From</label>
+					<div class="col-sm-10 nopadding">
+						<div class="col-sm-5 nopadding">
+							<div class="input-group input-group-sm">
+                                 <input type="text" class="form-control nobordR clearable" >
+								<span class="input-group-addon">
+								     <i class="icon icon-inputcalender"></i>
+								</span>
+							</div>
+						</div>
+						<label class="col-sm-2 text-center mt3 nopadding fnt11semibold">to</label>
+						<div class="col-sm-5 nopadding">
+							<div class="input-group input-group-sm">
+                                 <input type="text" class="form-control nobordR clearable" >
+								<span class="input-group-addon">
+									<i class="icon icon-inputcalender"></i>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="form-group nomargin clearfix">
+					<div class="doc-att">
+						<label class="radio-inline" style="margin-right: 70px;">
+							<input type="radio" name="statusRdo"   checked="" ng-model="vm.interventionStatus" ng-value="'All'" ng-change="vm.refreshListWithStatus()"  >All
+						</label>
+						<label class="radio-inline nomarlft " style="margin-right: 70px;">
+							<input type="radio" name="statusRdo"  checked="" ng-model="vm.interventionStatus" ng-value="'Addressed'" ng-change="vm.refreshListWithStatus()" >Completed
+						</label>
+						<label class="radio-inline nomarlft " style="margin-right: 70px;">
+							<input type="radio" name="statusRdo"  checked="" ng-model="vm.interventionStatus" ng-value="'Open'" ng-change="vm.refreshListWithStatus()" >Open
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 nopadding">
+<!-- 				<button class="btn btn-lgrey btn-xs  pull-right" type="button" ng-click="vm.showDevAlert()">Print</button> -->
+  				<print-button unique-id="printPtInterventionReport"  print-label="Print"  before-print="vm.setPrintData" show-preview="{{vm.printOptions.showPreview}}" print-data-destination="vm.printOptions.dataDestination" format="vm.printOptions.format" module="Pharmacy" plain-data="vm.printOptions.Htmldata"></print-button>
+				<button class="btn btn-lgrey btn-xs mr5 pull-right" type="button" ecwexport format="{{vm.exportOptions.format}}" exportjson="" filename="{{vm.exportOptions.filename}}" before-export="vm.setExportData()">Export</button>
+				<button class="btn btn-lgrey btn-xs pull-right mr5" ng-show="vm.securitySettings.InterventionAddAccess===1" type="button" id="new-intervation-btn" 
+				ng-click="vm.showInterventionPopUp('Add')">New</button>	
+			</div>
+		</div>
+	</div>
+</div>
+    <div class="row nomargin">
+        <div class="col-sm-12 nopadding">
+            <div class="simpleTable mt10 mb10">
+                <div class="tablehead">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr >
+                            	<th class="w20p">Int Name</th>
+                                <th class="w20p">Interventions</th>
+                                <th class="w10p">Duration</th>
+                                <th class="w10p">Status</th>
+                                <th class="w10p">Saving Value</th>
+                                <th class="w10p">Time Spend Value</th>
+                                <th class="w15p">Entered By</th>
+                                <th class="w10p">Entered Date</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="tablebody interventions-hgt" style="cursor:pointer">
+                    <table class="table table-bordered" id="interventions-table" >
+                        <tbody>
+                            <tr ng-repeat="data in vm.interventionsTable" ng-click="vm.showInterventionPopUp('Edit',data.interventionId)">
+                                <td class="w20p">{{data.interventionName}}</td>
+                                <td class="w20p">{{data.reason}}</td>
+                                <td class="w10p">{{data.duration}} {{data.durationUnits}}</td>
+                                <td class="w10p">{{data.status}}</td>
+                                <td class="w10p">{{data.savingValue}}</td>
+                                <td class="w10p">{{data.timeSpendValue}}</td>
+                                <td class="w15p">{{data.createdBy}}</td>
+                                <td class="w10p">{{data.createdOn}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

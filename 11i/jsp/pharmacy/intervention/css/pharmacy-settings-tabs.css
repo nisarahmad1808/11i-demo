@@ -1,0 +1,239 @@
+/*--------- Pricing Rule Engine Tab -----------*/
+
+.project-10i .pricing-rule-tab .left-section {
+	border-right: 1px solid #ccc;
+	background: #f5f5f4;
+}
+
+.project-10i .pricing-rule-tab .category-header {
+	background: #eeeeee;
+	padding: 10px 15px 10px 15px;
+	border-bottom: 2px solid #ccc;
+}
+
+.project-10i .pricing-rule-tab .category-header h4 {
+	margin-top: 7px;
+	margin-bottom: 0;
+}
+
+.project-10i .pricing-rule-tab .category-header .btn + .btn {
+	margin-right: 5px;
+}
+
+.project-10i .pricing-rule-tab .category-list {
+	background: #eeeeee;
+}
+
+.project-10i .pricing-rule-tab .category-list li {
+	background: #f5f5f4;
+}
+
+.project-10i .pricing-rule-tab .category-list li span {
+	color: #24272b;
+	font-size: 11px;
+	font-weight: 600;
+	width: 85%;
+	display: inline-block;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.project-10i .pricing-rule-tab .category-list li a .showedit-onhover {
+	visibility: hidden;
+}
+
+.project-10i .pricing-rule-tab .category-list li:hover a .showedit-onhover,
+.project-10i .pricing-rule-tab .category-list li.active a .showedit-onhover {
+	visibility: visible;
+}
+
+.project-10i .charge-type-list li a .icon-edit {
+	cursor: pointer;
+}
+
+.project-10i .pricing-rule-tab .right-section {
+	margin: 0;
+}
+
+.project-10i .pricing-rule-tab .right-section .breadcrumb {
+	border-bottom: 1px solid #e8e8e8;
+	margin-bottom: 0;
+}
+
+.project-10i .pricing-rule-tab .right-section .breadcrumb span.chngTxt {}
+
+.project-10i .pricing-rule-tab .right-section .tab-pane .simpleTable .tablebody thead tr th {
+	border: 0 !important;
+}
+
+.project-10i .pricing-rule-tab .right-section .tab-pane .simpleTable .tablehead thead tr th {
+	text-align: center;
+}
+
+.project-10i .pricing-rule-tab .right-section .tab-pane .simpleTable .tablebody tbody tr td .icon-edit {
+	margin-top: 5px;
+	margin-right: 5px;
+}
+
+.project-10i .pricing-rule-tab .right-section .tab-pane .simpleTable .tablebody tbody tr td .icon-trash {
+	margin-top: 3px;
+}
+
+.project-10i #addChargesTypeModal .modal-dialog,
+.project-10i #editChargesTypeModal .modal-dialog {
+	margin: auto;
+}
+
+.project-10i .charge-type-body {
+	height: 346px;
+}
+
+.project-10i .copy-modal-body,
+.project-10i .add-modal-body {
+	height: 546px;
+}
+
+.project-10i .copy-modal-body .searchicn {
+	left: 20px;
+}
+
+.project-10i .copy-modal-body .simpleTable input[type="checkbox"] {
+	margin-top: 0;
+	vertical-align: middle;
+}
+
+.project-10i .copy-modal-body .simpleTable .tablebody {
+	height: 442px;
+	border: 1px solid #ddd;
+	border-top: 0;
+}
+
+.project-10i .copy-modal-body .simpleTable .tablebody table {
+	border-left: 0;
+	border-right: 0;
+}
+
+.project-10i .copy-modal-body .simpleTable .tablebody tbody tr {
+	cursor: pointer;
+}
+
+.project-10i .add-modal-body .form-control[readonly] {
+	background-color: #fff;
+	cursor: none;
+}
+
+.project-10i .route-dictionary-table .table-bordered tbody tr td .icon-slimcheck {
+	color: #18a25b;
+}
+
+.project-10i .rd-addmodal .modal-dialog {
+	width: 420px;
+}
+
+.project-10i .rd-addmodal .modal-body {
+	height: 346px;
+	background-color: #f8f8f8;
+}
+
+.project-10i .rd-addmodal .modal-footer {
+	border-top: 2px solid #e5e5e5;
+	background-color: #f8f8f8;
+}
+
+.project-10i .rd-addmodal .det-view .form-group {
+	margin-bottom: 10px;
+}
+
+.project-10i .route-dictionary-table .table-bordered tbody tr td .icon-trash {
+	margin-top: -1px;
+}
+
+.project-10i .route-dictionary-table .table-bordered tbody tr td .icon-edit {
+	margin: 2px 8px 0 0;
+}
+
+
+/*-- Formulation-add-popup Start --*/
+
+.project-10i .formulation-add-popup {
+	width: 300px;
+	position: absolute;
+	z-index: 3;
+}
+
+.project-10i .formulation-add-popuparrow {
+	position: relative;
+	background: #fff;
+	padding: 16px 0px 10px 0;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+	border: 1px solid #ccc;
+}
+
+.project-10i .formulation-add-popuparrow:after,
+.project-10i .formulation-add-popuparrow:before {
+	bottom: 100%;
+	right: 6%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.project-10i .formulation-add-popuparrow:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #fff;
+	border-width: 10px;
+	margin-left: -10px;
+}
+
+.project-10i .formulation-add-popuparrow:before {
+	border-color: rgba(221, 221, 221, 0);
+	border-bottom-color: #ddd;
+	border-width: 11px;
+	margin-left: -11px;
+}
+
+.project-10i .add-price-form .doc-att label,
+.project-10i .edit-price-form .doc-att label {
+	cursor: pointer;
+}
+
+.project-10i .pricing-rule-tab .right-section .tab-pane .simpleTable .tablebody tbody tr.active td .icon-edit,
+.project-10i .pricing-rule-tab .right-section .tab-pane .simpleTable .tablebody tbody tr.active td .icon-trash {
+	visibility: visible;
+}
+
+.project-10i .select-box.facility-select label input[type="checkbox"] {
+	margin-right: 5px;
+	margin-top: 0;
+}
+
+.project-10i .select-box.facility-select label {
+	margin-bottom: 0;
+	font-weight: 600;
+}
+
+.project-10i #addChargesTypeModal tr td.feild-bg {
+    background: #fff8f5 !important;
+}
+.project-10i .hgt234 {
+	height: 234px;
+}
+.project-10i .vbarline {
+	border-right: 1px solid #ddd;
+	margin: 0 15px;
+}
+.project-10i .pwrap{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.project-10i .subheader{
+	font-size: 11px;color: #fff;
+    line-height: 29px;padding-left: 5px;
+}

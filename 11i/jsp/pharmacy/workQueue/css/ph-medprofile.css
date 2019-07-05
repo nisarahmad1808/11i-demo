@@ -1,0 +1,149 @@
+.project-10i .simpleTable.oddrows .tablebody tr:nth-child(':odd') td {
+    background: #f8f8f8;
+}
+
+.project-10i #medication-profile .badge.orange {
+    background-color: #FFA54D;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 11px;
+}
+
+.project-10i #medication-profile .badge.pink {
+    background-color: #ff8888;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 11px;
+}
+
+.project-10i #medication-profile .badge.grey {
+    background-color: #686767;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 11px;
+}
+
+.project-10i #medication-profile .tag-tab .nav-tabs> li> a {
+    cursor: pointer;
+}
+
+.project-10i #medication-profile .simpleTable .tablebody tbody tr td .icon-info2 {
+    font-size: 16px;
+    color: rgb(170, 170, 170);
+    visibility: hidden;
+}
+
+.project-10i #medication-profile .simpleTable .tablebody tbody tr:hover td .icon-info2,
+.project-10i #medication-profile .simpleTable .tablebody tbody tr.active td .icon-info2,
+.project-10i #medication-profile .simpleTable .tablebody tbody tr.sub-row:hover td .icon-edit{
+    visibility: visible !important;
+}
+
+.project-10i #medication-profile .simpleTable .tablebody tbody tr td .drop-boxses {
+    min-width: 175px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.project-10i #medication-profile .simpleTable .tablebody tbody tr td .drop-boxses .upnotch {
+    top: 0;
+    right: 10px;
+}
+
+.project-10i .h488 {
+    height: 488px;
+}
+
+.project-10i #mediOrderModal .for-sel .select-box {
+    border: none;
+    background: transparent;
+    height: auto;
+}
+ 
+
+.project-10i #mediOrderModal .custom-textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    height: 60px;
+}
+
+.project-10i .wraptxt {
+    white-space: normal !important;
+}
+
+.project-10i .hgt410px {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.project-10i .icon-verified {
+    background: url(/mobiledoc/inpatientWeb/assets/img/verified-tick.png) no-repeat;
+    width: 10px;
+    height: 9px;
+}
+
+.project-10i .reco-table.table > tbody > tr:hover > td.header-td {
+    background: #F6FBFF !important;
+}
+
+.project-10i .oddrows table tr:nth-child(odd) td {
+    background: #f8f8f8;
+}
+
+.project-10i .oddrows table tr td {
+    cursor: pointer;
+}
+
+.project-10i .simpleTable .tablebody table tr.opacity td {
+    opacity: 0.5;
+}
+
+.project-10i .left22 {
+    left: 22px !important;
+}
+
+.project-10i .simpleTable .table-bordered>tbody>tr>td .celexa-width {
+    width: 82px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.project-10i #medication-profile .simpleTable .tablebody tbody tr.hidden-row:hover > td .icon-edit{
+    visibility: hidden;
+}
+.project-10i .table>thead>tr>th.ph-status{
+    line-height: 13px !important;
+    vertical-align: middle !important;
+}
+.project-10i .proceed-prompt.collection-prompt {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 375px;
+	font-size: 15px;
+	text-align: center;
+	font-weight: 600;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+ }
+ .project-10i #printmedicationprofile {
+    float: right;
+ } 
+ .project-10i .simpleTable .table-bordered>tbody>tr>td .textwrap-medprofile {
+    white-space: normal !important;
+ 	text-overflow: inherit !important;
+ 	overflow: visible !important;
+}
+.project-10i .container-fluid .grey-footer-ph {    
+    bottom: 0px;
+    z-index: 9;
+    left: 0;
+    position: relative;
+}

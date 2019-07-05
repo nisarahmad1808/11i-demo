@@ -1,0 +1,45 @@
+.project-10i #pro-table_wrapper > .dataTables_scroll >.dataTables_scrollBody {
+    position: relative;
+}
+
+.project-10i .scanner-reson .w200 {}
+
+.project-10i .scanner-reson .w200 .item {
+    text-align: left;
+    padding: 3px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.project-10i .scanner-reson .w200 .item:hover,
+.project-10i .scanner-reson .w200 .item.active {
+    background: #09a55c;
+    color: #fff;
+}
+
+.project-10i .doc-att .item:hover .checkbox-inline,
+.project-10i .doc-att .item.active .checkbox-inline {
+    color: #fff;
+}
+
+.project-10i .simpleTable #phar-schedule-table tr:hover td .icon-grey-note {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.project-10i .modal-w720 .modal-dialog {
+    width: 720px;
+}
+
+.project-10i .hgt336 {
+    height: 336px;
+}
+
+.project-10i .noteattch-tablehgt {
+    height: 385px;
+    border: 1px solid #ddd;
+    border-top: 0;
+}
+
+.project-10i .simpleTable .noteattch-tablehgt tr:last-child td {
+    border-bottom: 1px solid #ddd;
+}

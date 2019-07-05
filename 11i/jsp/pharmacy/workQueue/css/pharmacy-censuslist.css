@@ -1,0 +1,265 @@
+.project-10i .number-bg {
+	background: #dcdcdc;
+	padding: 1px 4px;
+	color: #000;
+	border-radius: 5px;
+}
+.project-10i .popup-drop23 {
+	z-index: 99 !important;
+}
+.project-10i .donotdisplay {
+	display: none;
+}
+.project-10i .no-one {
+	text-align: center;
+}
+.project-10i .w235 {
+	width: 235px !important;
+}
+.project-10i .det-view .form-group .control-label.text {
+	text-align: center!important;
+	padding-right: 0px!important;
+}
+.project-10i .dropdown-menu.search-drop.pro-list li:hover {
+	background: #09a55c !important;
+	color: #fff !important;
+}
+.project-10i .jqgrid-fluid-width .ui-jqgrid .ui-jqgrid-btable {
+	table-layout: auto;
+}
+.project-10i .jqgrid-fluid-width .ui-jqgrid .ui-jqgrid-htable {
+	table-layout: auto;
+}
+.project-10i .details {
+	font-weight: 600;
+	color: #000;
+	font-size: 11px;
+	position: absolute;
+	top: 6px;
+	left: 45px;
+	z-index: 10;
+	width: 150px;
+}
+.project-10i .jqgrid-fluid-width #ph-pharmacy-dashboard tr.ui-row-ltr:nth-child(2) td,
+.project-10i .jqgrid-fluid-width #ph-pharmacy-dashboard tr.ui-row-ltr:nth-child(13) td,
+.project-10i .jqgrid-fluid-width #ph-pharmacy-dashboard tr.ui-row-ltr:nth-child(23) td {
+	border-bottom: 2px solid #ddd !important;
+}
+.project-10i .dashboard-section .no-fix-column .ui-jqgrid-htable,
+.project-10i .dashboard-section .no-fix-column .ui-jqgrid-btable,
+.project-10i .dashboard-section .no-fix-column .ui-jqgrid-pager,
+.project-10i .dashboard-section .no-fix-column .ui-jqgrid-view,
+.project-10i .dashboard-section .no-fix-column .ui-jqgrid-bdiv,
+.project-10i .dashboard-section .no-fix-column .ui-jqgrid-hdiv,
+.project-10i .dashboard-section .no-fix-column .ui-jqgrid-hbox,
+.project-10i .dashboard-section .no-fix-column .ui-jqgrid-ftable,
+.project-10i .dashboard-section .no-fix-column .ui-jqgrid-sdiv,
+.project-10i .dashboard-section .no-fix-column .ui-jqgrid {
+	max-width: 100% !important;
+	width: 100% !important;
+}
+.project-10i .dashboard-section .no-fix-column .ui-jqgrid-htable {
+	padding-right: 0px;
+}
+.project-10i .dashboard-section .no-fix-column .ui-jqgrid-hbox {
+	padding-right: 0px !important;
+}
+.project-10i #gbox_allpatcentics table {
+	table-layout: auto;
+}
+.project-10i .width132 {
+	width: 132px;
+}
+.project-10i #allpatcentics_1000 {
+	background-color: #e8e8e8;
+}
+.project-10i #allpatcentics tr:nth-child(odd) td.single-column-color {
+	background: #f8f7c9 !important;
+	opacity: 1 !important;
+}
+.project-10i #allpatcentics tr:nth-child(even) td.single-column-color {
+	background: #fffece !important;
+	opacity: 1 !important;
+}
+.project-10i .jqgrid-fluid-width .ui-priority-secondary {
+	opacity: 1 !important;
+}
+.project-10i #mydashboard-table {
+	overflow-y: auto;
+}
+.project-10i .bdr-left-right-r i.formicon {
+	width: 10px !important;
+	min-height: 16px !important;
+	background: url(../img/icon-form.png) no-repeat;
+	display: inline-block;
+	vertical-align: middle!important;
+	margin-right: 2px;
+	float: none;
+}
+.project-10i .dropdown-menu>li>a {
+	padding-right: 14px;
+}
+.project-10i .dateselect li a {
+	padding: 6px 10px;
+}
+.project-10i .dateselect li {
+	border-bottom: 1px solid #ddd!important;
+}
+.project-10i .dateselect li a:hover {
+	background-color: #09a55c;
+	color: #000 !important;
+	border-color: #058046;
+}
+.project-10i .dropdown-menu.dateselect {
+	margin-top: 5px;
+	padding-bottom: 0px;
+}
+.project-10i .dropdown-menu::before {
+	border-bottom: 7px solid rgba(0, 0, 0, 0.2);
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	content: "";
+	display: inline-block;
+	left: 9px;
+	position: absolute;
+	top: -7px;
+}
+.project-10i .dropdown-menu::after {
+	border-bottom: 6px solid #FFFFFF;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	content: "";
+	display: inline-block;
+	left: 10px;
+	position: absolute;
+	top: -6px;
+}
+.project-10i .select-hgt {
+	padding: 3px 4px;
+	height: 24px!important;
+	border: 1px solid #b6b5b5;
+	font-weight: 600;
+	color: #000;
+	box-shadow: none;
+}
+.project-10i .h50{
+	height: 50px!important;
+}
+.project-10i .icon-link {
+	background: url(../img/link-icon.png) no-repeat;
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+}
+
+.project-10i .border-bottom2{
+    border-bottom: 2px solid #ddd;
+}
+
+.project-10i .pad-rightleft4{
+	padding: 0px 4px!important;
+}
+
+.project-10i .popup-orage-box{
+	background: orange;
+    border-radius: 4px;
+    padding: 0px 5px;
+    color: #fff;
+}
+.project-10i .icon-addpateint {
+ background: url(../img/New-Patient-Admit.png) no-repeat;
+ width: 15px;
+ height: 15px;
+ display: inline-block; 
+ background-size: contain;
+}
+.project-10i .icon-allergy {
+ background: url(../img/Allergy-Not-Verified.png) no-repeat;
+ width: 18px;
+ height: 18px;
+ display: inline-block; 
+ background-size: contain;
+}
+
+.project-10i .icon-reconcil {
+ background: url(../img/demo/Admit-Reconciliation.png) no-repeat;
+ width: 18px;
+ height: 18px;
+ display: inline-block; 
+ background-size: contain;
+}
+.project-10i .popup-gray-box{
+	background: #686767;
+    border-radius: 4px;
+    padding: 0px 5px;
+    color: #fff;
+}
+
+
+.project-10i .popup-red-box{
+	background: #fa8484;
+    border-radius: 4px;
+    padding: 0px 5px;
+    color: #fff;
+}
+
+.project-10i .popupgreentext{
+    font-size: 11px;
+    color: #34c334;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.project-10i .popup-headerbg{
+	background: #f6fbff!important;
+}
+
+.project-10i .popup-headerTitle{
+	color: #134e66;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.project-10i .odd-row{
+	background: #f8f8f8!important;
+}
+.project-10i #table-scroll{
+	height: 450px;
+}
+
+.project-10i .center-align{
+	text-align: center!important;
+}
+
+.project-10i .display-block{
+	display: block!important;
+}
+
+.project-10i .inlineblock-left{
+	display: inline-block!important;
+	float: left!important;
+}
+
+.project-10i .inlineblock-right{
+	display: inline-block!important;
+	float: right!important;
+}
+
+.project-10i #select-temp-drop-mypatient{
+    position: absolute;
+    background: #fff;
+    z-index: 9;
+    width: 225px;
+    height: auto;
+    border-radius: 3px;
+}
+.project-10i .table-left-arrow {
+    background: url(/mobiledoc/inpatientWeb/assets/img/table-left-arrow.png) no-repeat !important;
+    width: 20px;
+    height: 24px;
+    display: inline-block;
+    cursor: pointer;
+    top: -1px;
+    position: absolute;
+    right: 0px;
+}

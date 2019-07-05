@@ -1,0 +1,1336 @@
+.project-10i .tabelbody {
+    width: 100%;
+}
+
+.project-10i .orange {
+    background: #FFA54D;
+}
+
+.project-10i .green {
+    background: #09a55c;
+}
+
+.project-10i .hgt636 {
+    height: 636px;
+}
+
+.project-10i #discharge-medication {
+    table-layout: fixed;
+}
+
+.project-10i .surgical-table.table.admittable > thead > tr > th:first-child,
+.project-10i .surgical-table.table.admittable> tbody > tr > td:first-child {
+    border-right: none;
+}
+
+.project-10i .icon-panright.collapsed:before {
+    content: "\e946";
+    font-size: 8px;
+    color: #fff;
+    cursor: pointer;
+    padding: 3px;
+    background: #BFBFBF;
+    border-radius: 2px;
+}
+
+.project-10i .icon-panright:before {
+    content: "\e944";
+    font-size: 8px;
+    color: #fff;
+    cursor: pointer;
+    padding: 3px;
+    background: #bfbfbf;
+    border-radius: 2px;
+}
+
+.project-10i .reco-table.table > thead > tr > th.top-border {
+    border-top: 1px solid #bdbcbc !important;
+}
+
+.project-10i .reco-table.table > thead > tr > th {
+    background: #e5e6e7!important;
+    border: 1px solid #c0bfbf;
+    font-size: 11px;
+    color: #000;
+    border-color: #bfbfbf;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.project-10i .reco-table.table thead > tr > th {
+    border-left: none;
+    box-sizing: border-box;
+    border-top: 1px solid #ccc!important;
+}
+
+.project-10i .reco-table.table > tbody > tr > td {
+    background: #fff;
+    font-size: 11px;
+    border: 1px solid #dcdcdc;
+    padding: 4px 7px;
+    color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.project-10i .reco-table.table > tbody > tr> td {
+    vertical-align: middle;
+    height: 24px;
+    color: #000;
+    font-weight: 600;
+}
+
+.project-10i .reco-table.table > tbody > tr:hover> td {
+    background: #edf3f0;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    cursor: pointer;
+    color: #000;
+}
+
+.project-10i .reco-table.table .hidden-row > td {
+    padding: 0px;
+    height: 0px;
+}
+
+.project-10i .reco-table.table .hidden-row > td > .accordian-body > table {
+    border: none;
+    margin: 0px;
+}
+
+.icon-checklist {
+    background: url(../img/checklist.png) no-repeat !important;
+    width: 16px;
+    height: 11px;
+}
+
+.project-10i .icon-plus-circle {
+    background: url(../img/plus-circle.png) no-repeat !important;
+    width: 16px;
+    height: 14px;
+}
+
+.project-10i #admittable .icon-plus-circle,
+.project-10i #admittable .icon-checklist {
+    position: absolute;
+    right: 5px;
+}
+
+.project-10i .notedropdown {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 430px;
+    height: 190px;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px #ccc;
+    display: none;
+    z-index: 3;
+}
+
+.project-10i .ad-arrow-right {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.project-10i .arrow-right-white {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+    border-radius: 3px;
+    z-index: 9;
+}
+
+.project-10i .arrow-right-white:after,
+.project-10i .arrow-right-white:before {
+    right: 100%;
+    top: 8%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.project-10i .arrow-right-white:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #fff;
+    border-width: 8px;
+    margin-top: -8px;
+}
+
+.project-10i .arrow-right-white:before {
+    border-color: rgba(221, 221, 221, 0);
+    border-right-color: #ddd;
+    border-width: 9px;
+    margin-top: -9px;
+}
+
+.project-10i .jqgrid-fluid-width #admittable tr.jqgrow td {
+    height: 44px !Important;
+}
+
+.project-10i #admittable .mybtn-group.green-btngrp .btn.btn-grn.active,
+.project-10i #home-meds-table .mybtn-group.green-btngrp .btn.btn-grn.active,
+.project-10i #in-meds-table .mybtn-group.green-btngrp .btn.btn-grn.active,
+.project-10i .homemades-newbtngrp .mybtn-group.green-btngrp .btn.btn-grn.active {
+    background: #09A55C;
+    color: #fff;
+}
+
+.project-10i table.table tr td .admit-innertable > tbody > tr > td .icon-trash,
+.project-10i table.table tr td .admit-innertable > tbody > tr > td .icon-info2,
+.project-10i table.table tr:hover td .admit-innertable > tbody > tr > td .icon-trash {
+    visibility: hidden
+}
+
+.project-10i table.table tr td .admit-innertable > tbody > tr:hover > td .icon-info2,
+.project-10i table.table tr td .admit-innertable > tbody > tr:hover > td .icon-trash {
+    visibility: visible;
+}
+
+.project-10i table.table tr td .admit-innertable > tbody > tr:hover > td {
+    background: #fffece;
+}
+
+.project-10i table.table tr td .admit-innertable > tbody > tr > td .icon-info2 {
+    color: #aaaaa9;
+    font-size: 16px;
+}
+
+.project-10i .proceed-prompt {
+    width: 370px;
+    height: 115px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+    box-shadow: 0px 0px 5px #AEADAD;
+    z-index: 2;
+}
+
+.project-10i .proceed-prompt .icon-alert-info {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.project-10i .proceed-prompt .left-prompt {
+    width: 55px;
+    height: 115px;
+    border-right: 1px solid #d3c980;
+    background: #f4db30;
+}
+
+.project-10i .proceed-prompt .prompt-message {
+    padding-top: 15px;
+    font-size: 13px;
+}
+
+.project-10i .proceed-prompt2 {
+    width: 370px;
+    height: 115px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+    box-shadow: 0px 0px 5px #AEADAD;
+    z-index: 2;
+}
+
+.project-10i .proceed-prompt2 .icon-alert-info {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.project-10i .proceed-prompt2 .left-prompt {
+    width: 55px;
+    height: 115px;
+    border-right: 1px solid #d3c980;
+    background: #f4db30;
+}
+
+.project-10i .proceed-prompt2 .prompt-message {
+    padding-top: 15px;
+    font-size: 13px;
+}
+
+.project-10i .icon-check-corner {
+    background: url(../img/check-corner.png) no-repeat !important;
+    width: 15px;
+    height: 11px;
+}
+
+.project-10i .nav-tabs .icon-check-corner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.project-10i .statusdropdown {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 120px;
+    height: auto;
+    display: none;
+    background: #fff;
+    z-index: 2;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.project-10i .statusdropdown ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.project-10i .statusdropdown ul li {
+    border-bottom: 1px solid #ccc;
+}
+
+.project-10i .statusdropdown ul li a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #000;
+    white-space: nowrap;
+}
+
+.project-10i .statusdropdown ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #09A55C;
+}
+
+.project-10i .jqgrid-fluid-width .ui-jqgrid tr.ui-state-hover > td,
+.project-10i .jqgrid-fluid-width .ui-jqgrid tr.ui-state-hover {
+    background: #fffece !important;
+    border-right-color: #dad9a4 !important;
+}
+
+.project-10i .jqgrid-fluid-width.highlight-rowclr-custom .ui-widget-content tr.ui-state-highlight td {
+    background: #f5ebb6 !important;
+    border-right: 1px solid #e0d7a7 !important;
+}
+
+.project-10i .ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.project-10i #home-meds-table .btn-group.small-10ibtn.big-one .btn,
+.project-10i #in-meds-table .btn-group.small-10ibtn.big-one .btn {
+    padding: 1px 5px;
+}
+
+.project-10i #in-meds-table .btn-lgrey.btn {
+    background: #F8F8F8;
+    line-height: 15px;
+}
+
+.project-10i .icon-gray-note {
+    background: url(../img/gray-note.png) no-repeat !important;
+    width: 11px;
+    height: 12px;
+}
+
+.project-10i #discharge-section1 tr td {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+/*======= Pending Meds tab styles ========*/
+
+.project-10i .fnt-11 {
+    font-size: 11px;
+}
+
+.project-10i .list-wrapper {
+    border: 1px solid #EFEFEF;
+    background-color: #F8F8F8;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-10i .list-wrapper ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.list-wrapper ul > li {
+    padding: 10px 10px;
+    background-color: #F8F8F8;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.project-10i .list-wrapper ul > li p {
+    font-size: 11px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.project-10i .list-wrapper ul > li p > strong {
+    font-weight: 700;
+}
+
+.project-10i .list-wrapper ul > li .btn-group-xs > .btn {
+    padding: 1px 7px;
+    font-weight: 600;
+}
+
+.project-10i .list-wrapper ul > li .btn-group-xs > .btn.active {
+    background-color: #e4e4e4;
+    box-shadow: none;
+    color: #000;
+}
+
+.project-10i .list-wrapper ul > li .icon-info2 {
+    font-size: 16px;
+    color: #aaaaaa;
+}
+
+.project-10i .list-wrapper ul > li .drop-boxses {
+    min-width: 175px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.project-10i .list-wrapper ul > li .drop-boxses p {
+    font-size: 11px;
+}
+
+.project-10i .list-wrapper ul > li .drop-boxses .upnotch {
+    top: 0;
+    right: 10px;
+}
+
+.project-10i .footer-lnk ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-10i .footer-lnk ul > li {
+    display: inline-block;
+    padding: 7px;
+}
+
+.project-10i .footer-lnk ul > li:first-child {
+    padding-left: 0;
+}
+
+.project-10i .footer-lnk ul > li:last-child {
+    padding-right: 0;
+}
+
+.project-10i .footer-lnk ul > li > a {
+    font-size: 12px;
+    color: #000;
+    font-weight: 600;
+    display: block;
+}
+
+.project-10i .simultaneous-arrow1 {
+    background: url("../img/icon-simultaneous1.png") no-repeat;
+    width: 13px;
+    height: 11px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.project-10i .simultaneous-arrow2 {
+    background: url("../img/icon-simultaneous2.png") no-repeat;
+    width: 13px;
+    height: 7px;
+    display: inline-block;
+}
+
+.project-10i .green-spansection {
+    color: #fff;
+    font-weight: 600;
+    background: #73b38f;
+    padding: 0px 5px;
+    border-radius: 5px;
+    font-size: 11px;
+    line-height: 21px;
+    margin-left: 2px;
+}
+
+.project-10i .simpleTable .table-bordered>tbody>tr>td .fnt11semibold {
+    font-weight: 600;
+    color: #000;
+    font-size: 11px;
+}
+
+.project-10i .cmplete-txt {
+    font-size: 11px;
+    color: #000;
+    font-style: italic;
+}
+
+.project-10i .reco-table.table {
+    margin-top: 0 !important;
+    table-layout: fixed;
+    border-top: 0;
+}
+
+.project-10i .reco-table.table > thead > tr > th {
+    padding: 5px 0 0 5px;
+    height: 27px;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    font-size: 11px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: none;
+    box-sizing: border-box;
+    background: #e5e6e7!important;
+}
+
+.project-10i .hgt435 {
+    height: 435px;
+    overflow: auto;
+    border-bottom: none!important;
+}
+
+.project-10i .reco-table.table > tbody > tr > td.header-td {
+    color: #134E66;
+    padding: 8px;
+    background: #F6FBFF;
+    vertical-align: middle;
+    height: 24px;
+    font-weight: 600;
+    font-size: 11px;
+    border: 1px solid #dcdcdc;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-bottom: 1px solid #ddd !important;
+}
+
+.project-10i .reco-table.table > tbody > tr td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.project-10i .icon-panright:before {
+    content: "\e944";
+    font-size: 8px;
+    color: #fff;
+    cursor: pointer;
+    padding: 3px;
+    background: #bfbfbf;
+    border-radius: 2px;
+}
+
+.project-10i .pharmacy-note {
+    background: url(../img/pharmacy-note.png) no-repeat;
+    width: 11px;
+    height: 12px;
+}
+
+.project-10i .pharmacy-info {
+    background: url(../img/pharmacy-infoico.png) no-repeat;
+    width: 17px;
+    height: 16px;
+    margin-left: 5px;
+}
+
+.project-10i .notesmall-popup {
+    background: #fff;
+    position: absolute;
+    z-index: 9;
+}
+
+.project-10i .notesmall-popuparrow {
+    position: relative;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 5px 9px;
+    border-radius: 2px;
+    box-shadow: -3px -3px 0px -2px #ddd;
+}
+
+.project-10i .notesmall-popuparrow:after,
+.project-10i .notesmall-popuparrow:before {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.project-10i .notesmall-popuparrow:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 8px;
+    margin-left: 43px;
+}
+
+.project-10i .notesmall-popuparrow:before {
+    border-color: rgba(221, 221, 221, 0);
+    border-bottom-color: #ddd;
+    border-width: 9px;
+    margin-left: 42px;
+}
+
+.project-10i .simpleTable .table-bordered>tbody>tr>td.even {
+    background: #f8f8f8 !important;
+}
+
+.project-10i .simpleTable .table-bordered>tbody>tr>td.disableeven {
+    background: #fcfbfb !important;
+}
+
+.project-10i table.table tr td .admit-innertable > tbody > tr > td .pharmacy-info {
+    display: none;
+}
+
+.project-10i table.table tr td .admit-innertable > tbody > tr:hover > td .pharmacy-info {
+    display: inline-block;
+}
+
+.project-10i .border-style {
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc!important;
+}
+
+.project-10i .w531 {
+    width: 531px;
+}
+
+.project-10i .med-check {
+    background: url(../img/med-check.png) no-repeat;
+    width: 14px;
+    height: 14px;
+}
+
+.project-10i .grey-pencil-edit {
+    background: url(../img/icon-patient-medication.png) no-repeat;
+    width: 13px;
+    height: 13px;
+}
+
+.project-10i .simpleTable.tableproperty .table-bordered>tbody>tr>td div {
+    border-bottom-width: 0px;
+    padding: 1px 8px;
+    font-size: 11px;
+    line-height: 21px;
+    font-weight: 600;
+    color: #000;
+    background: none;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.project-10i .medorder {
+    background: url(../img/demo/med-order.png) no-repeat;
+    width: 1000px;
+    height: 556px;
+    margin-top: -1px;
+}
+
+.project-10i .nosub {
+    color: #fff;
+    font-size: 9px;
+    font-weight: 600;
+    background: #7e7e7e;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+.project-10i .bot-st-foot {
+    border-top: 1px solid #ddd;
+    background: #fbfbfb;
+}
+
+.project-10i .hgt546 {
+    height: 546px;
+}
+
+.project-10i .ht378 {
+    height: 378px !important;
+}
+
+.project-10i .icon-greystar.active {
+    background: url(../img/icon-green-star.png) no-repeat;
+    width: 14px;
+    height: 13px;
+    display: inline-block;
+}
+
+.project-10i .icon-greystar {
+    background: url(../img/grey-star.png) no-repeat;
+    width: 14px;
+    height: 13px;
+    display: inline-block;
+}
+
+.project-10i .borderprop {
+    border-bottom: 1px solid #ddd;
+}
+
+.project-10i .hold-popup {
+    width: 300px;
+    background: #fff;
+    border: 1px solid #dddddd;
+    position: absolute;
+    z-index: 999;
+}
+
+.project-10i .hold-popup-arrow:after,
+.project-10i .hold-popup-arrow:before {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.project-10i .hold-popup-arrow:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 10px;
+    margin-left: -10px;
+}
+
+.project-10i .hold-popup-arrow:before {
+    border-color: rgba(0, 0, 0, 0);
+    border-bottom-color: #dddddd;
+    border-width: 11px;
+    margin-left: -11px;
+}
+
+.project-10i .selected-list li {
+    list-style-type: none;
+}
+
+.project-10i ul.selected-list {
+    padding-left: 0px !important;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.project-10i ul.selected-list li {
+    background: #fff;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    padding: 6px 15px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #000;
+}
+
+.project-10i ul.selected-list li:hover {
+    background: #fffece;
+    border-bottom: 1px solid #d3ded8;
+    border-left: none;
+    border-right: none;
+    color: #000;
+}
+
+.project-10i ul.selected-list li.active {
+    background: #f5ebb6 !important;
+}
+
+.project-10i .grey-color {
+    color: #6e6e6e;
+}
+
+.project-10i .green-text-nw {
+    color: #34a674!important;
+    line-height: 24px!important;
+}
+
+.project-10i .r-icon {
+    background: url(../img/r-icon.png) no-repeat;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+
+
+/*06-09-2016*/
+
+.project-10i .tableproperty .mybtn-group.green-btngrp .btn.btn-grn.active {
+    background: #09a55c;
+    color: #fff;
+    box-shadow: none;
+}
+
+.project-10i .simpleTable.tableproperty .table-bordered>tbody>tr>td:last-child {
+    vertical-align: inherit;
+}
+
+.project-10i .reco-table.table .order-set > td {
+    padding: 0px;
+    height: 0px;
+}
+
+.project-10i .complete-disable-button {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.project-10i .complete-sign-tooltip {
+    position: absolute;
+    right: 16%;
+    top: 16%;
+}
+
+.project-10i .complete-sign-tooltip .reorder-tiparrow:after {
+    border-width: 0px;
+}
+
+.project-10i .system-ready-icon {
+    background: url(../img/ready-icon.png) no-repeat;
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.project-10i .complete-sign-tooltip .reorder-tiparrow {
+    padding: 4px 10px;
+}
+
+.project-10i .edit-home-sec .ellipsis {
+    overflow: visible;
+}
+
+.project-10i .dis-inlineblock {
+    display: inline-block;
+}
+
+.project-10i .doctor-info {
+    display: none;
+}
+
+.project-10i .hgt353 {
+    height: 353px;
+}
+
+.project-10i .hgt362 {
+    height: 362px;
+}
+
+.project-10i .icon-emarnote {
+    font-size: 14px;
+    color: #8d8d8d;
+}
+
+.project-10i #medication-profile .badge.grey {
+    background-color: #aaaaaa !important;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 10px !important;
+    padding: 4px 8px;
+}
+
+.project-10i .icon-home-medicine {
+    background: url(../img/icon-home-medicine.png) no-repeat;
+    width: 16px;
+    height: 17px;
+    display: inline-block;
+}
+
+.project-10i .icon-black-round-r {
+    color: #000;
+    font-weight: 700;
+    border-radius: 3px;
+    font-size: 10px !important;
+    padding: 2px 6px;
+    background: #eaeaea;
+    color: #000;
+    border: 1px solid #c5c5c5;
+    font-family: sans-serif;
+}
+
+.project-10i #medication-profile .badge.nf-grey {
+    background-color: #e0c361 !important;
+    color: #000;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 10px !important;
+    padding: 4px;
+    border-radius: 50% !important;
+}
+
+.project-10i .new-home-medicine {
+    background: url(../img/new-home-medicine.png) no-repeat;
+    width: 20px;
+    height: 15px;
+    display: inline-block;
+}
+
+.project-10i .icon-pharmacy-interventions.grey {
+    font-size: 15px;
+    color: #aaaaaa !important;
+}
+
+.project-10i .icon-pharmacy-interventions.greenico {
+    color: #09a55c;
+    font-size: 15px;
+}
+
+.project-10i .icon-pharmacy-interventions.red {
+    color: #ec4c41;
+    font-size: 15px;
+}
+
+.project-10i .icon-patient-own-medication {
+    color: #898989;
+    font-size: 15px;
+}
+
+.project-10i .med-profile-table tbody tr td .icon-info2:before {
+    content: "\e91c";
+    visibility: hidden;
+}
+
+.project-10i .med-profile-table tbody tr:hover td .icon-info2:before {
+    content: "\e91c";
+    visibility: visible;
+}
+
+.project-10i .padb20 {
+    padding-bottom: 20px !important;
+}
+
+.project-10i .info-tooptip {
+    position: absolute;
+    background: #fff;
+    z-index: 9;
+    border: 1px solid #ddd;
+    width: 235px;
+}
+
+.project-10i .info-tooptip-arrow {
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.project-10i .info-tooptip-arrow:after,
+.info-tooptip-arrow:before {
+    bottom: 100%;
+    left: 87%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.project-10i .info-tooptip-arrow:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 8px;
+    margin-left: -8px;
+}
+
+.project-10i .info-tooptip-arrow:before {
+    border-color: rgba(221, 221, 221, 0);
+    border-bottom-color: #ddd;
+    border-width: 9px;
+    margin-left: -9px;
+}
+
+.project-10i #startingprompt {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    left: 0;
+    width: 459px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.fnt13semibold {
+    font-size: 13px;
+    font-weight: 600;
+    color: #000;
+}
+
+@media screen and (max-width: 1366px) {
+    .project-10i .complete-sign-tooltip {
+        right: 23%;
+    }
+    .project-10i .reco-table.table > tbody > tr td .custwidth {
+        width: 243px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+.project-10i .simpleTable#home-meds-table .table-bordered>tbody>tr>td {
+    line-height: 17px!important;
+    padding: 6px 8px;
+}
+
+.project-10i .simpleTable#in-meds-table .table-bordered>tbody>tr>td {
+    line-height: 17px!important;
+    padding: 6px 8px;
+}
+
+.project-10i .border-right0 {
+    border-right: 0px!important;
+}
+
+.project-10i .med-table-scroll {
+    position: relative;
+}
+
+.project-10i .green-span {
+    line-height: 16px!important;
+}
+
+.project-10i .simpleTable#home-meds-table .table-bordered>tbody>tr.light-yellow>td {
+    background: #fffbed;
+}
+
+.project-10i .simpleTable#in-meds-table .table-bordered>tbody>tr.light-yellow>td {
+    background: #fffbed;
+}
+
+.project-10i .lookup-drop.with-control> .input-group-btn.last .btn {
+    border-radius: 0 3px 3px 0 !important;
+    padding: 1px 8px 8px;
+}
+
+.project-10i .home-mades-table tr:nth-child(even) td {
+    background: #f8f8f8 !important;
+}
+
+.project-10i .simpleTable.oddrows .tablebody tr:nth-child(':odd') td {
+    background: #f8f8f8;
+}
+
+.project-10i #medication-profile .badge.orange {
+    background-color: #FFA54D;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 11px;
+}
+
+.project-10i #medication-profile .badge.pink {
+    background-color: #ff8888;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 11px;
+}
+
+.project-10i #medication-profile .badge.grey {
+    background-color: #686767;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 11px;
+}
+
+.project-10i #medication-profile .tag-tab .nav-tabs> li> a {
+    cursor: pointer;
+}
+
+.project-10i #medication-profile .simpleTable .tablebody tbody tr td .icon-info2 {
+    font-size: 16px;
+    color: rgb(170, 170, 170);
+    visibility: hidden;
+}
+
+.project-10i #medication-profile .simpleTable .tablebody tbody tr:hover td .icon-info2,
+.project-10i #medication-profile .simpleTable .tablebody tbody tr.active td .icon-info2 {
+    visibility: visible;
+}
+
+.project-10i #medication-profile .simpleTable .tablebody tbody tr td .drop-boxses {
+    min-width: 175px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.project-10i #medication-profile .simpleTable .tablebody tbody tr td .drop-boxses .upnotch {
+    top: 0;
+    right: 10px;
+}
+
+.project-10i .h488 {
+    height: 488px;
+}
+
+.project-10i #mediOrderModal .for-sel .select-box {
+    border: none;
+    background: transparent;
+    height: auto;
+}
+
+.project-10i #mediOrderModal .custom-textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    height: 60px;
+}
+
+.project-10i .wraptxt {
+    white-space: normal !important;
+}
+
+.project-10i .hgt410px {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.project-10i .icon-verified {
+    background: url(../img/verified-tick.png) no-repeat;
+    width: 10px;
+    height: 9px;
+}
+
+.project-10i .reco-table.table > tbody > tr:hover > td.header-td {
+    background: #F6FBFF !important;
+}
+
+.project-10i .oddrows table tr:nth-child(odd) td {
+    background: #f8f8f8;
+}
+
+.project-10i .oddrows table tr td {
+    cursor: pointer;
+}
+
+.project-10i .simpleTable .tablebody table tr.opacity td {
+    opacity: 0.5;
+}
+
+.project-10i .left22 {
+    left: 22px !important;
+}
+
+.project-10i .simpleTable .table-bordered>tbody>tr>td .celexa-width {
+    width: 82px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.project-10i .medication-tabsection {
+    width: 531px;
+    margin: 10px;
+}
+
+.project-10i .home-med-block {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    background: #f5f5f4;
+}
+.project-10i .asc-sort {
+    background: url(../img/asc-sort.png) no-repeat;
+    height: 6px;
+    width: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    left: 5px
+}
+.project-10i .des-sort {
+    background: url(../img/des-sort.png) no-repeat;
+    height: 6px;
+    width: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    left: 5px;
+}
+.project-10i .sorting-dropdown{
+    display: none;
+}
+.project-10i .srt-btn{
+    background: transparent !important;
+    border: none !important;
+    height: 20px;
+    /*z-index: 9999999;*/
+}
+
+.project-10i .srt-btn .ui-grid-ico-sort{
+    /*left: 8px;*/
+    top: 9px !important;
+}
+
+.project-10i .enable-ellipsis {
+    width: 45px;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.project-10i .reco-table-thead .linehgt12{
+    line-height: 12px !important;
+    vertical-align: middle !important;
+}
+.project-10i .totalcount {
+     color: #000;
+    font-weight: 600;
+     padding: 1px 5px;
+    border-radius: 5px;
+    font-size: 11px;
+    line-height: 17px;
+    margin-left: 2px;
+    border: 1px solid #9b9999;
+    margin-top: 3px;
+}
+
+/*style for reconcile flow updates*/  
+.project-10i .w258{
+	width: 258px !important;
+}
+.project-10i #hex1 {
+  width: 17px;
+  height: 16px;
+}
+.project-10i #color-green {
+  background-color: #09a55c; 
+}
+.project-10i #color-blue {
+  background-color: #134e66; 
+}
+.project-10i .hexagon-wrapper {
+  text-align: center;
+  margin: 15px 2px 0px 0px;
+  position: relative;
+  display: inline-block;
+}
+.project-10i .hexagon {
+  height: 100%;
+  width: calc(100% * 0.57735);
+  display: inline-block;
+}
+.project-10i .hexagon:before {
+  position: absolute;
+  top: 0;
+  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  background-color: inherit;
+  height: inherit;
+  width: inherit;
+  content: '';
+  transform: rotateZ(60deg);
+}
+.project-10i .hexagon:after {
+  position: absolute;
+  top: 0;
+  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  background-color: inherit;
+  height: inherit;
+  width: inherit;
+  content: '';
+  transform: rotateZ(-60deg);
+}
+.project-10i .hex-label{
+	margin: 13px 0px 0px 6px;
+    position: absolute;
+    color: white;
+    z-index: 999;
+	font-size: 10px;
+}
+.project-10i #change-order-prompt {
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    font-weight: 600;
+}
+.project-10i .inpatient-order-table .hex-label {
+	margin: 0px 0px 0px 6px;
+}
+.project-10i .inpatient-order-table .hexagon-wrapper {
+    margin: 2px 0px 0px 0px !important;
+}
+.project-10i .legends #hex1 {
+	margin: 0px 4px 0px 0px;
+    width: 13px;
+    height: 13px;
+}
+.project-10i .legends .tag{
+    font-size: 11px;
+    font-weight: 500;
+    color: #938f8f;
+}
+.project-10i .medication-block .form-group {
+	margin-bottom: 10px;
+}
+.project-10i .medication-block .form-group.mtop35 {
+	margin-top: 35px;
+}
+.project-10i .medication-block .form-group .hgt50 {
+	height: 50px;
+}
+.project-10i .simpleTable thead tr.editable-yellowbg th {
+    background: #f8f7f1;
+}
+.project-10i .yellow-input-editable {
+    border: 0 !important;
+    padding-right: 15px;
+    background-color: transparent;
+    font-size: 11px;
+}
+.project-10i .ivtablehgt {
+    height: 190px;
+	border-left: 1px solid #c0bfbf;
+	border-right: 1px solid #c0bfbf;
+}
+.project-10i .ivtablehgt tbody tr td {
+    border-bottom: 1px solid #ddd !important;
+}
+.project-10i .tablefoooter thead tr th {
+    border: 0 !important;
+	border-top: 0 !important;
+}
+.project-10i .proceed-prompt .prompt-message.change-orderblock {
+    width: 82%;
+}
+
+@media(min-width: 1400px){
+     .project-10i .enable-ellipsis {
+        width: auto;
+        overflow: none;        
+    }   
+}    

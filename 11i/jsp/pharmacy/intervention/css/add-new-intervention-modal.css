@@ -1,0 +1,291 @@
+.project-10i #addnew-inter-modal {
+    z-index: 1112;
+}
+
+.project-10i .det-view .label-left .form-group .control-label {
+    text-align: left;
+    padding-right: 10px !important;
+}
+
+.project-10i .w85btn {
+    width: 85px;
+    padding: 0;
+}
+
+.project-10i .height216 {
+    height: 184px;
+}
+
+.project-10i .icon-clocknw {
+    background: url(../img/clock-icon-flagged.png) no-repeat !important;
+    height: 16px;
+    width: 15px;
+    margin-top: 1px;
+}
+
+.project-10i .drug-table-scroll {
+    height: 145px;
+}
+
+.project-10i .allergy-table-scroll {
+    height: 101px;
+}
+
+.project-10i .user {
+    background: url(../img/user.jpg) no-repeat;
+    width: 39px;
+    height: 36px;
+    display: inline-block;
+}
+
+.project-10i .hgt75 {
+    height: 75px;
+}
+
+.project-10i .new-intervention .modal-dialog {
+    width: 720px;
+    height: 620px;
+}
+
+.project-10i .height253 {
+    height: 253px;
+}
+.project-10i .height210 {
+    height: 210px;
+}
+
+.project-10i .new-intervention .top-section span {
+    line-height: 16px;
+}
+
+.project-10i .new-intervention .modal-dialog .w2p {
+    width: 2% !important;
+}
+
+.project-10i .ftwt400 {
+    font-weight: 400 !important;
+}
+
+.project-10i .ftwt600 {
+    font-weight: 600 !important;
+}
+
+.project-10i .ftwt700 {
+    font-weight: 700 !important;
+}
+
+.project-10i .fntgreenbld13 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #06A759;
+}
+
+.project-10i .hgt544 {
+    height: 544px;
+}
+
+.project-10i .icon-searchpatient {
+    background: url(../img/search-patient.png) no-repeat;
+    width: 20px;
+    height: 15px;
+}
+
+.project-10i .intervention-lookup-wrap .user-lb {
+    vertical-align: middle;
+    line-height: 24px;
+    font-weight: 600;
+    font-size: 11px;
+}
+
+.project-10i .intervention-lookup-wrap .pr5 {
+    padding-right: 5px;
+}
+
+.project-10i .intervention-lookup-wrap .orange-filter {
+    background-color: #f5f5f4 !important;
+    border: 1px solid #cccccb !important;
+}
+
+.project-10i .intervention-lookup-wrap .drop-content .form-group input[type="text"].faciltiy {
+    font-style: italic;
+}
+
+.project-10i .intervention-lookup-wrap .orange-filter .input-group-btn:last-child>.btn {
+    margin-left: -1px;
+}
+
+.project-10i .intervention-lookup-wrap .dropdown-menu.search-drop {
+    width: 320px !important;
+}
+
+.project-10i .drug-sec .provider-list .caret, .project-10i .general-section .provider-list .caret {
+    float: left !important;
+    margin-right: 5px !important;
+    margin-left: 5px !important;
+}
+
+.project-10i .drug-sec .provider-list .select-box, .project-10i .general-section .provider-list .select-box {
+    background-color: transparent !important;
+    border: 0 !important;
+}
+
+.project-10i .drug-sec .provider-list .selection-field, .project-10i .general-section .provider-list .selection-field {
+    padding: 3px 0 !important;
+}
+
+.project-10i .intervention-lookup-wrap .orange-filter input[type=radio] {
+    margin: 0px 0 -2px 0 !important;
+}
+
+.project-10i .drug-sec .text-left, .project-10i .general-sec .text-left {
+    text-align: left !important;
+}
+
+.project-10i .allergy-table-scroll .select-box .caret {
+    margin-right: 0 !important;
+}
+
+.project-10i .lisinoprilclick {
+    display: block;
+    height: 22px;
+    padding: 3px 6px;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: left;
+    list-style-position: inside;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.project-10i .option-box {
+    position: relative;
+    border-radius: 3px;
+    border: 1px solid #b6b5b5;
+    background: #fff;
+}
+
+.project-10i .option-box .caret {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.project-10i ul.inttype {
+    padding-left: 0px;
+}
+
+.project-10i .inttype {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ddd;
+    z-index: 999;
+    width: 100%;
+    cursor: pointer;
+    text-align: left;
+}
+
+.project-10i .inttype li {
+    padding: 4px 8px;
+    color: #242424;
+    list-style: none;
+    font-size: 11px;
+    border-bottom: 1px solid #ddd;
+    font-weight: 600;
+    list-style-position: inside;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.project-10i .inttype li:hover {
+    background: #09a55c;
+    color: #fff;
+}
+
+.project-10i .inttype li label:hover {
+    background: #09a55c;
+    color: #fff;
+}
+
+.project-10i .fnt10 {
+    font-size: 10px !important;
+}
+
+.project-10i .action-taken-note {
+    resize: none;
+    font-size: 11px;
+    height: 61px;
+}
+    .project-10i .popup-option {
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    z-index: 10;
+}
+.project-10i .popup-option ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.project-10i .popup-option ul li {
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 11px;
+    color: #000;
+    font-weight: 600;
+    list-style: none;
+}
+
+.project-10i .dropdown-menu.search-drop {
+    width: 100%!important;
+}
+.project-10i .insurance-lookup .dropdown-menu.search-drop {
+    width: 204px !important;
+ }
+.project-10i .add-chip-Tags {
+    overflow: hidden;
+    height: 22px;
+	position: relative;
+}
+.project-10i .add-chip-Tags.newprop {
+           max-height: 24px;
+    position: relative;
+    margin-left: 59px;
+    width: 205px;
+    height: auto;
+}
+.project-10i .add-chip-Tags.newprop_assignedTo {
+           max-height: 24px;
+    position: relative;
+    margin-left: 7px;
+    width: 205px;
+    height: auto;
+}
+.project-10i .sub-chips {
+    float: left;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 0px 3px;
+    margin-right: 7px;
+    background-color: #eaeaea;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+
+.project-10i .sub-chips .sub-chip-text {
+    font-size: 11px;
+}
+.project-10i .sub-chips .sub-chip-remove {
+    font-size: 9px;
+    cursor: pointer;
+    float: right;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+.project-10i .add-new-intervention > .modal-dialog{
+	width:720px;
+}

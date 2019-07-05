@@ -1,0 +1,87 @@
+<link rel="stylesheet" href="/mobiledoc/jsp/inpatientWeb/staticContent/pharmacy/interfaces/css/dispensingInterfaceLogModal.css">
+
+<div class="modal-content global-property">
+  <div class="modal-header clearfix">
+    <button type="button" class="close" ng-click="$dismiss()">&times;</button>
+    <i class="icon icon-questionmark pull-right mt7 mr20"></i>
+    <h4 class="modal-title ml5">Details</h4> 
+  </div>
+
+  <div class="modal-body hgt544 intervention-lookup-wrap" ng-init="dispInterfaceDetailsCtrl.initDescData()">
+    <div class="row nomargin">
+      <div class="col-sm-12 brdrbtm"> 
+        <div class="fnt11 mt5 mb5 clearfix"> 
+        	<patient-info-stripe patient-id="dispInterfaceDetailsCtrl.itemObj.patientId"></patient-info-stripe>
+        </div>
+      </div>
+    </div>
+    <div class="row nomargin">
+      <div class="col-sm-12 greybg nopadding brdr-btm">
+        <div class="col-sm-3 pt10 pb10 cust-width12p">
+          <div class="brdrright"> 
+            <p class="fnt11grey bold-txt">Type:</p>
+            <p class="fnt11semibold" title="{{dispInterfaceDetailsCtrl.itemObj.meOrderType}}" ng-bind="dispInterfaceDetailsCtrl.itemObj.meOrderType"></p>
+          </div>
+        </div>
+        <div class="col-sm-2 nopadleft pt10 pb10 cust-width12p">
+          <div class="brdrright"> 
+            <p class="fnt11grey bold-txt">Status:</p>
+            <p class="fnt11semibold capitalize" title="{{dispInterfaceDetailsCtrl.itemObj.status}}" ng-bind="dispInterfaceDetailsCtrl.itemObj.status"></p>
+          </div>
+        </div>
+        <div class="col-sm-2 nopadleft pt10 pb10 cust-width12p">
+          <div class="brdrright">
+            <p class="fnt11grey bold-txt">Provider:</p>
+            <p class="fnt11semibold" title="{{dispInterfaceDetailsCtrl.itemObj.provider}}" ng-bind="dispInterfaceDetailsCtrl.itemObj.provider"></p>
+          </div>
+        </div>
+        <div class="col-sm-6 nopadding pt10 pb10">
+          <div class="">
+            <p class="fnt11grey bold-txt">Drug Description:</p>
+            <p class="fnt11semibold ellipsis-style" title="{{dispInterfaceDetailsCtrl.itemObj.drugDesc}}" ng-bind="dispInterfaceDetailsCtrl.itemObj.drugDesc"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row nomargin mt12">
+      <div class="col-sm-12 nopadding">
+        <div class="col-sm-6">
+          <div class="header-text brdrright brdrcolor-grey pb10">
+            <span class="drkblue fnt12">
+              <strong>RAW MESSAGE</strong>
+            </span>
+          </div>
+        </div>
+        <div class="col-sm-6 nopadding pb10">
+          <div class="header-text mb0">
+            <span class="drkblue fnt12">
+              <strong>HL7 MESSAGE</strong>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row nomargin"> 
+      <div class="col-sm-12 nopadding perfect-scrollbar">
+        <div class="col-sm-6">
+          <div class="brdrright brdrcolor-grey">
+            <div class="fnt11semibold pr20">
+             <pre class="hl7message scrollHgt408" ng-bind-html="dispInterfaceDetailsCtrl.itemObj.data | prettify"></pre>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 nopadleft">
+          <div class="fnt11semibold pr20">
+            <p class="hl7message" title="{{dispInterfaceDetailsCtrl.itemObj.hl7Message}}" ng-bind="dispInterfaceDetailsCtrl.itemObj.hl7Message"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <div class="modal-footer ref_foot white-bg nomargin">
+    <button type="button" class="btn btn-light btn-xs pull-left" ng-click="dispInterfaceDetailsCtrl.previousData();" ng-disabled="dispInterfaceDetailsCtrl.selectedIndex==0">Prev</button>
+    <button type="button" class="btn btn-light btn-xs pull-left" ng-click="dispInterfaceDetailsCtrl.nextData();" ng-disabled="dispInterfaceDetailsCtrl.selectedIndex==dispInterfaceDetailsCtrl.list.length-1">Next</button>
+    <button type="button" class="btn btn-lgrey btn-xs pull-right" ng-click="$dismiss()">Close</button>
+  </div>
+  <div class="clearfix"></div>
+</div>

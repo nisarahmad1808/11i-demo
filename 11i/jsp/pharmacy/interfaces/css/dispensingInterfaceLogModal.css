@@ -1,0 +1,104 @@
+.project-10i .new-intervention .modal-dialog {
+  width: 1100px;
+  height: 680px;
+}
+
+.project-10i .hgt544 {
+  height: 544px;
+}
+
+.project-10i .brdrright {
+  border-right: 1px solid #aeaeae
+}
+
+.project-10i .ellipsis-style { 
+  overflow-wrap: break-word;
+}
+
+.project-10i .cust-width12p{
+  width: 15% !important;
+}
+
+.project-10i .hgt600{
+  height: 600px;
+}
+
+.project-10i .scrollHgt408{
+    height: 390px;
+    overflow-y: auto;
+}
+
+.project-10i .brdrcolor-grey{
+  border-color: #dbdbdb !important
+}
+
+.project-10i .pr20{
+  padding-right:20px 
+}
+
+.project-10i .brdr-btm{
+  border-bottom: 1px solid #e6e6df
+}
+.project-10i .icon-grey-info{
+  visibility: hidden;
+}
+
+.project-10i .dualheader-table2.table tbody tr:hover .icon-grey-info{
+  visibility: visible;
+}
+
+.btn-light{
+  background: #f9f9f9;
+  border-color:#d1c8c3  
+}
+
+.icon-questionmark:before{
+  color: #fff !important;
+  font-size: 17px !important
+}
+
+.mr32{
+  margin-right:32px
+}
+
+.medication-caret{
+  margin-right:13px !important
+}
+
+.pl7{
+  padding-left:7px !important
+}
+
+.pr7{
+  padding-right:7px !important
+}
+
+.pb20{
+  padding-bottom:20px
+}
+
+.custom-dropdown-menu{
+    top:70px !important;
+    display: block !important;
+}
+
+.pl5{
+  padding-left:5px 
+}
+
+.pr5{
+  padding-right:5px 
+}
+
+@-moz-document url-prefix() {
+  .project-10i .hgt600 {
+    height: 620px;
+  }
+}
+.hl7message{
+    overflow-wrap: break-word;
+}
+
+.project-10i .bold-txt { 
+	font-weight: bold;
+}

@@ -1,0 +1,60 @@
+@CHARSET "ISO-8859-1";
+
+.project-10i .rxInformationModal .rxInfoDrugList .rowHighLight {
+	background-color: #fffece !important;
+}
+
+.project-10i .rxInformationModal .modal-dialog {
+	height: 580px !important;
+}
+
+.project-10i .rxInformationModal .modal-body {
+	width: 100%;
+	height: 500px;
+	background-color: #ffffff;
+}
+
+.project-10i .rxInformationModal .rxInfoCloseButton {
+	top: 0px !important;
+}
+
+.project-10i .rxInformationModal .rxInfoDrugList {
+	max-height: 498px;
+	height: 498px;
+	border-right: 1px solid #D0DAE3;
+}
+
+.project-10i .rxInformationModal .rxInfoDrugList #disRxInfoDrugHeader {
+	height: 38px;
+	border-bottom: 1px solid #a0d1b3;
+}
+
+.project-10i .rxInformationModal .rxInfoDrugList #disRxInfoDrugHeader #drugListHeader {
+	height: 100%;
+    padding-top: 10px;
+}
+
+ .project-10i .dischargeMedTable tbody tr:nth-child(even) {
+	 background: #F6FBFF;
+	 border-top: 1px solid #bbb;
+	 border-bottom: 1px solid #bbb;
+ }
+ 
+.project-10i .dischargeMedTable tbody tr:hover {	
+	background: #fffece;
+}
+ 
+.project-10i .rxInformationModal .rxEduInfo {
+	height: 450px;
+	max-height: 450px; 
+	padding: 0px 5px;
+}
+
+.project-10i .rxInformationModal .monographInfo {
+	height: 450px;
+	max-height: 450px;
+}
+
+.project-10i .rxInformationModal .modal-footer>div {
+	float: right !important;
+}

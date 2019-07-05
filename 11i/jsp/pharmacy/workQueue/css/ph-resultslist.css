@@ -1,0 +1,89 @@
+.project-10i #select-temp-drop-result {
+	position: absolute;
+	background: #fff;
+	z-index: 9;
+	width: 225px;
+	height: auto;
+	border-radius: 3px;
+}
+.project-10i .ph-resultList-cust-scroll tbody tr td .icon-attachment:before{
+	font-size: 14px;
+}
+.project-10i .prio-red {
+     background: #fa8484;
+     height: auto;
+     width: auto;
+     color: #000;
+     text-transform: uppercase;
+     font-size: 11px;
+     border-radius: 3px;
+     font-family: "Open Sans";
+     font-weight: 400;
+     text-align: center;
+     font-style: normal;
+     padding: 1px 5px;
+     vertical-align: middle;
+     margin-top: 0px;
+	 line-height: 14px;
+ }
+ 
+ .project-10i .prio-gray {
+     background: #686767;
+     height: auto;
+     width: auto;
+     color: #fff;
+     font-size: 11px;
+     border-radius: 3px;
+     font-family: "Open Sans";
+     font-weight: 400;
+     text-align: center;
+     font-style: normal;
+     padding: 1px 5px;
+     vertical-align: middle;
+     margin-top: 0px;
+	 line-height: 14px;
+ }
+ 
+ .project-10i .prio-yellow {
+     background: #d7ac00;
+     height: auto;
+     width: auto;
+     color: #000;
+     font-size: 11px;
+     border-radius: 3px;
+     font-family: "Open Sans";
+     font-weight: 400;
+     text-align: center;
+     font-style: normal;
+     padding: 1px 5px;
+     vertical-align: middle;
+     margin-top: 0px;
+	 line-height: 14px;
+ }
+
+.project-10i .dualheader-table2.table tbody tr.odd {
+    background: #e2eaeb;
+}
+.project-10i .simpleTable .ph-resultList-cust-scroll tbody tr.odd > td {
+	background: #dfe8ea !important;
+}
+.project-10i .ph-resultList-cust-scroll tbody tr.odd.highlight-row td,
+.project-10i .ph-resultList-cust-scroll tbody tr.even.highlight-row td {
+    background: #f5ebb6!important;
+    /* border-top: 1px solid #dad9a4 !important; */
+    border-bottom: 1px solid #dad9a4 !important;
+    border-right-color: #dad9a4 !important;
+}
+
+.project-10i .table>tbody+tbody {
+    border-top: 0px solid #ddd!important;
+}
+.project-10i .light-collapsebg {
+    background: #f2f2f2!important;
+}
+.project-10i .nested-data-table tbody tr td:first-child {
+	text-transform: uppercase;
+}
+.project-10i #ph-result-filter .date-rangewidth .dateTimeRange .clearable.x {
+    background-position: right -10px center;
+}

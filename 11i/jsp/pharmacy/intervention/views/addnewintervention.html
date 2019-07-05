@@ -1,0 +1,473 @@
+<div class="modal-content">
+        <div class="w720" ng-init="vm.initialize()">
+            <div class="modal-header clearfix"> 
+                <button type="button" class="close" ng-click="vm.dismissModal()"  aria-hidden="true">&times;</button> 
+                <h4 class="modal-title">{{vm.mode}} Intervention</h4> 
+            </div> 
+            <div class="modal-body hgt544 intervention-lookup-wrap">
+            <div class="col-sm-12 brdrbtm top-section nopadding" ng-show="vm.topSection" >
+            <div class="col-sm-12 pl10 pr10 brdrbtm">
+                <div class=" fnt11 pull-left mt5 mb5">
+                    <div class="pull-left mt3">
+                        <span class="drkblue fnt12"><strong>{{vm.patientDetails.patientName}}, {{vm.patientDetails.patientAge}}, {{vm.patientDetails.patientGender}}</strong></span>
+<!--                         <i class="icon icon-ob-date mb5 mr3 ml8"></i> -->
+						<span class="ml15"><i18n class="ng-scope" translate="DOB">DOB</i18n>:
+                        <span class="ml-2">{{vm.patientDetails.patientDob}}</span>
+                        <i class="icon icon-ob-tel ml8"></i>
+                        <span>{{vm.patientDetails.patientMobile}}</span>
+                        <i class="icon icon-email ml8 mr3"></i>
+                        <span>{{vm.patientDetails.patientEmail}}</span>
+                        <span class="ml8"><b>MRN</b>: {{vm.patientDetails.patientMRN}}</span>
+                    </div>
+                </div>
+            </div>
+        </div> 
+                <div class="col-sm-12 nopadding det-view btmbdr clearfix"> 
+                    <div class="pad1010"> 
+                        <div class="col-sm-6 nopadding"> 
+                            <div class="form-group mb10 pt10 clearfix">
+                            	<!--Changing Level from Int type to Type as per SB   --> 
+                                <label class="col-sm-2 control-label text-left nopadding mt3">Type<span class="red-txt">*</span></label> 
+                                <div class="col-sm-8 nopadleft"> 
+                                    <div class="select-box"> 
+                                        <b class="caret selection-click"></b> 
+                                        <span class="selection-field selection-click" ng-bind="vm.intervention.intTypeName">Select</span> 
+                                        <ul class="sel-optn selection-options int-type" ng-hide="vm.mode=='Edit'"> 
+                                        <li ng-repeat="item in vm.interventionCategory" class="{{item.listName}}" ng-click="vm.interventionCategoryListClicked(item)"  ng-disabled="vm.mode=='Edit'" >{{item.listName}}</li>
+                                        </ul> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+
+                        <div class="col-sm-6 nopadding" id="orderdrug" ng-show="vm.intervention.intType.listName=='Drug'" > 
+                            <div class="form-group mb10 pt10 clearfix"> 
+                                <label class="col-sm-3 nopadding control-label text-left mt3">Ordered Drugs<span class="red-txt">*</span></label> 
+                                <div class="col-sm-8 nopadleft"> 
+                                    <div class="option-box"> 
+                                        <b class="caret"></b> 
+                                        <span class="lisinoprilclick" ng-click="vm.showMedOrderList()" ng-model="vm.intervention.selectedMedOrderModel">Select</span> 
+                                        <ul class="inttype" ng-show="vm.showCheckedList" perfect-scrollbar refresh-on-resize="true" refresh-on-change="vm.medicationOrders" ng-style="{ 'height' :{true:'185px',false:'{{185 - vm.medicationOrders.length * 20}}}px'}[vm.medicationOrders.length >=5 ] }"  > 
+                                            <li class=""> 
+                                                <div class="input-group input-group-sm opaq-input"> 
+                                                    <span class="input-group-addon nobdr-rgt noborder"> 
+															<i class="icon icon-greysearch"></i>   
+													</span> 
+                                                    <input type="text" class="form-control clearable brl nopadleft noborder" placeholder="Search" ng-model="vm.searchTextQuery"> 
+                                                </div> 
+                                            </li> 
+                                            <li ng-repeat="item in vm.medicationOrders | filter:vm.searchTextQuery" > 
+                                                <div class="doc-att pull-left"> 
+                                                    <div class="checkbox checkbox-property nomartop"> 
+                                                        <label class="fntsemibld11" title="{{item.itemName}}"> 
+                                                            <input type="checkbox" class="mt2"  value="{{item}}" ng-checked="vm.selectedMedOrder.indexOf(item) > -1"  ng-click="vm.toggleSelectionMedOrder(item)">{{item.itemName}} 
+                                                        </label> 
+                                                    </div> 
+                                                </div> 
+                                                <div class="pull-right"> 
+                                                    <span class="pull-right"></span> 
+                                                </div> 
+                                            </li> 
+                                        </ul> 
+                                    </div> 
+                                </div> 
+                                <div class="col-sm-1 nopadding"> 
+                                    <button type="button" class="btn btn-lgrey btn-xs pull-right" ng-mouseenter="vm.showSelectedMedList()"  style="padding-left: 3px;" ><span>{{vm.selectedMedOrder.length}}/{{vm.medicationOrders.length}}</span></button> 
+                               			 <ul class="dropdown-menu caret-dropdown pull-right showList" id="showSelectedMedList" on-outside-element-click='vm.hideOnOutsideClick()'>
+                                        <li class="brdbtm hlight" ng-repeat="item in vm.selectedMedOrder">
+                                            <a href="#">{{item.itemName}}<span class="pull-right fnt10 mt2"></span></a>
+                                        </li>
+                                    </ul>
+                                </div> 
+                            </div> 
+                        </div>
+                        <div class="col-sm-6 nopadding" id="orderdrug" ng-show="vm.intervention.intType.listName=='Allergy'" > 
+                            <div class="form-group mb10 pt10 clearfix"> 
+                                <label class="col-sm-3 nopadding control-label text-left mt3">Pt. Allergies<span class="red-txt">*</span></label> 
+                                <div class="col-sm-8 nopadleft"> 
+                                    <div class="option-box"> 
+                                        <b class="caret"></b> 
+                                        <span class="lisinoprilclick" ng-click="vm.showMedOrderList()">Select</span> 
+                                        <ul class="inttype" ng-show="vm.showCheckedList" perfect-scrollbar refresh-on-resize="true" refresh-on-change="vm.Allergies" ng-style="{ 'height' :{true:'185px',false:'{{185 - vm.Allergies.length * 20}}}px'}[vm.Allergies.length >=5 ] }"> 
+                                            <li class=""> 
+                                                <div class="input-group input-group-sm opaq-input"> 
+                                                    <span class="input-group-addon nobdr-rgt noborder"> 
+															<i class="icon icon-greysearch"></i> 
+													</span> 
+                                                    <input type="text" class="form-control clearable brl nopadleft noborder" placeholder="Search" ng-model="vm.searchAllergy"> 
+                                                </div> 
+                                            </li> 
+                                            <li ng-repeat="item in vm.Allergies | filter:vm.searchAllergy"> 
+                                                <div class="doc-att pull-left"> 
+                                                    <div class="checkbox checkbox-property nomartop"> 
+                                                        <label class="fntsemibld11"> 
+                                                            <input type="checkbox" class="mt2"  value="{{item}}" ng-checked="vm.selectedAllergies.indexOf(item) > -1" ng-click="vm.toggleSelectionAllergies(item)">{{item.drug}} 
+                                                        </label> 
+                                                    </div> 
+                                                </div> 
+                                                <div class="pull-right"> 
+                                                    <span class="pull-right"></span> 
+                                                </div> 
+                                            </li> 
+                                        </ul> 
+                                    </div> 
+                                </div> 
+                                <div class="col-sm-1 nopadding"> 
+                                    <button type="button" class="btn btn-lgrey btn-xs pull-right" ng-mouseenter="vm.showSelectedMedList()"  style="padding-left: 3px;" >{{vm.selectedAllergies.length}}/{{vm.Allergies.length}}</button> 
+                               			 <ul class="dropdown-menu caret-dropdown pull-right showList" id="showSelectedAllergyList" on-outside-element-click='vm.hideOnOutsideClick()'>
+                                        <li class="brdbtm hlight" ng-repeat="item in vm.selectedAllergies">
+                                            <a href="#">{{item.drug}}<span class="pull-right fnt10 mt2"></span></a>
+                                        </li>
+                                    </ul>	
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div> 
+                </div> 
+                  <div class="drug-sec grey-bg pad1010 brdrbtm "> 
+                    <div class="col-sm-12 nopadleft nopadright det-view"> 
+                        <div class="col-sm-6 nopadding"> 
+                            <div class="form-group nomarbot clearfix"> 
+                                <label class="col-sm-2 nopadding control-label mt3">Consulted</label> 
+                                <div class="col-sm-7 nopadding"> 
+                                  
+                                    <div class="letter-lookup-only insurance-lookup"> 
+                                                                                <div class="input-group input-group-sm lookup-drop with-control borderradiuslr"> 
+                                                                                
+                                                                                <staff staff-name="vm.consulted" place-holder="Search Consultant"  staff-click="vm.addConsultedCallBack()" ></staff>
+                                                                                </div> 
+                                                                </div> 
+
+                                </div> 
+                                <div class="col-sm-3 nopadding provider-list"> 
+                                    <div class="select-box"> 
+                                        <b class="caret selection-click"></b> 
+                                        <span class="selection-field selection-click">Provider</span> 
+                                        <ul class="sel-optn selection-options"> 
+                                            <li>Provider</li> 
+                                            <li>Staff</li> 
+                                            <li>Pharmacist</li> 
+                                        </ul> 
+                                    </div> 
+                                </div> 
+                            </div> 
+
+                             <div class="clearfix"></div> 
+                               <div class="add-chips "> 
+                                                            <div class="add-chip-Tags newprop ps-container mt5" perfect-scrollbar refresh-on-resize="true" refresh-on-change="vm.consultedList" style="position:relative;height:auto;"> 
+                                                                <div class="sub-chips cursor secondchip" ng-repeat="item in vm.consultedList"> 
+                                                                    <span class="sub-chip-text">{{item.name}}</span> 
+                                                                    <span class="sub-chip-remove" ng-click="vm.removeFromConsultedList(vm.consultedList,item)" >x</span> 
+                                                                </div> 
+                                                            <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;"><div class="ps-scrollbar-y" style="top: 0px; height: 0px;"></div></div></div> 
+                                                        </div> 
+                         </div> 
+                        <div class="col-sm-6 nopadding"> 
+                            <div class="form-group nomargin clearfix"> 
+                                <label class="col-sm-2 nopadding control-label mt3">Reason<span class="red-txt">*</span></label> 
+                                <div class="col-sm-10 nopadding"> 
+                                    <div class="select-box"> 
+                                        <b class="caret selection-click"></b> 
+                                        <span class="selection-field  selection-click" ng-bind="vm.intervention.reasonName">Select</span> 
+                                        <ul class="sel-optn selection-options"> 
+                                            <li ng-repeat="item in vm.interventionReasonsData" ng-model="vm.intervention.selectedReason" ng-hide="item.isActive==false" ng-click="vm.listReasonClicked(item)">{{item.reason}} 
+<!--                                             <i data-ng-if="item.isActive" class="icon right-click-icon chkmark pull-left pad10"></i> -->
+<!--                                             <i class="icon icon-redcross pull-left" style="padding-right:10px" ng-if="!item.isActive"></i>  -->
+                                            </li> 
+                                        </ul> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div> 
+                    <div class="clearfix"></div> 
+                  </div> 
+                <div class="general-section grey-bg pad1010 brdrbtm " style="display: none;"> 
+                     <div class="col-sm-12 nopadleft nopadright det-view"> 
+                        <div class="col-sm-6 nopadding"> 
+                            <div class="form-group nomarbot clearfix"> 
+                                <label class="col-sm-2 nopadding control-label mt3">Consulted</label> 
+                                <div class="col-sm-7 nopadding"> 
+                                  
+                                    <div class="letter-lookup-only insurance-lookup"> 
+                                                                                <div class="input-group input-group-sm lookup-drop with-control borderradiuslr"> 
+                                                                                    <i class="icon-Search searchicn top7"></i> 
+                                                                                    <input type="text" name="searchcode" class="form-control clearable noborder-right letter-input insurance-input pdl20"> 
+                                                                                    <div class="input-group-btn pt-menu"> 
+                                                                                        <button type="button" class="btn btn-default"> 
+                                                                                            <i class="icon icon-browser"></i> 
+                                                                                        </button> 
+                                                                                    </div> 
+
+                                                                                </div> 
+                                                                                Lookup 
+                                                                                <ul class="dropdown-menu search-drop serchlist"> 
+         <li> 
+                                                                    <label class="checkbox-inline nopadtop"> 
+                                                                        <input type="checkbox" class="mt2 firstclick" value="Role 1">Eric Day MD 
+                                                                     </label> 
+                                                                    <div class="pull-right">Provider</div> 
+                                                                </li> 
+                                                                <li> 
+                                                                    <label class="checkbox-inline nopadtop"> 
+                                                                        <input type="checkbox" class="mt2" value="Role 1">Sam Willis MD 
+                                                                    </label> 
+                                                                    <div class="pull-right">Provider</div> 
+                                                                </li> 
+                                                                  <li> 
+                                                                    <label class="checkbox-inline nopadtop"> 
+                                                                        <input type="checkbox" class="mt2" value="Role 1">Joe Moore MD 
+                                                                    </label> 
+                                                                    <div class="pull-right">Provider</div> 
+                                                                </li> 
+                                                                 <li> 
+                                                                    <label class="checkbox-inline nopadtop"> 
+                                                                        <input type="checkbox" class="mt2" value="Role 1">Kevin Moran 
+                                                                    </label> 
+                                                                    <div class="pull-right">Staff</div> 
+                                                                </li> 
+                                                                 <li> 
+                                                                    <label class="checkbox-inline nopadtop"> 
+                                                                        <input type="checkbox" class="mt2" value="Role 1">Bret Baker 
+                                                                    </label> 
+                                                                    <div class="pull-right">Pharmacist</div> 
+                                                                </li> 
+                                                                <li> 
+                                                                    <label class="checkbox-inline nopadtop"> 
+                                                                        <input type="checkbox" class="mt2" value="Role 1">Matt Whalley 
+                                                                    </label> 
+                                                                    <div class="pull-right">Pharmacist</div> 
+                                                                </li> 
+                                                                </ul></div> 
+
+                                </div> 
+                                <div class="col-sm-3 nopadding provider-list"> 
+                                    <div class="select-box"> 
+                                        <b class="caret selection-click"></b> 
+                                        <span class="selection-field selection-click">Provider</span> 
+                                        <ul class="sel-optn selection-options"> 
+                                            <li>Provider</li> 
+                                            <li>Staff</li> 
+                                            <li>Pharmacist</li> 
+                                        </ul> 
+                                    </div> 
+                                </div> 
+                            </div> 
+
+                             <div class="clearfix"></div> 
+                               <div class="add-chips"> 
+                                                            <div class="add-chip-Tags newprop ps-container" data-ps-id="b0c172fa-a551-0633-861e-0862f6a76268"> 
+                                                                <div class="sub-chips cursor firstchip">
+                                                                    <span class="sub-chip-text">Eric Day MD</span> 
+                                                                    <span class="sub-chip-remove">x</span> 
+                                                                </div> 
+                                                               <div class="sub-chips cursor secondchip"> 
+                                                                    <span class="sub-chip-text">Sam Willis MD</span> 
+                                                                    <span class="sub-chip-remove">x</span> 
+                                                                </div>  -->
+                                                            <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;"><div class="ps-scrollbar-y" style="top: 0px; height: 0px;"></div></div></div> 
+                                                        </div> 
+                         </div> 
+                        <div class="col-sm-6 nopadding"> 
+                            <div class="form-group nomargin clearfix"> 
+                                <label class="col-sm-2 nopadding control-label mt3">Reason</label> 
+                                <div class="col-sm-10 nopadding"> 
+                                    <div class="select-box"> 
+                                        <b class="caret selection-click"></b> 
+                                        <span class="selection-field  selection-click">Select</span> 
+                                        <ul class="sel-optn selection-options"> 
+                                            <li>Drug Drug Interactions - Major</li> 
+                                            <li>Patient Counselling</li> 
+                                            <li>IV to PO</li> 
+                                            <li>Dosage Adjustment</li> 
+                                            <li>Therapy Substitutions</li> 
+                                        </ul> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div> 
+                    <div class="clearfix"></div> 
+                    <div class="clearfix"></div> 
+                  </div> 
+                <div class="col-sm-12 det-view pb10 nopadding"> 
+                    <div class="pad1010"> 
+                        <div class="col-sm-6 label-left brdrright mt10 nopadding height216"> 
+                            <div class="form-group nomargin clearfix"> 
+                                <label class="col-sm-4 nopadding control-label mt3">Assigned To<span class="red-txt">*</span></label> 
+                                <div class="col-sm-10 nopadleft"> 
+                                    <div class="input-group input-group-sm nopadding opaq-input"> 
+								<staff
+	                            staff-name="vm.assignedTo"
+	                            place-holder="Staff Name"
+	                            staff-click="vm.addAssignedToCallBack()">
+		                        </staff>  
+                                    </div> 
+                                </div> 
+                            </div>
+                                        <div class="clearfix"></div> 
+                            <!-- Chips for Assigned to default to Truserid as per Jira: IPUSA-7270  -->
+							 <div class="add-chips"> 
+							
+                                                            <div class="add-chip-Tags newprop_assignedTo mt5" > 
+                                                                <div class="sub-chips cursor firstchip">
+                                                                    <span class="sub-chip-text" ng-bind="vm.assignedToDetails.fullName"></span> 
+<!--                                                                     <span class="sub-chip-remove">x</span>  -->
+                                                                </div> 
+                                                        </div> 
+                                 </div>   
+                            <div class="form-group nomargin clearfix pt5"> 
+                                <label class="col-sm-4 nopadding control-label mt3">Duration<span class="red-txt">*</span></label> 
+                                <div class="clearfix"></div> 
+                                <div class="col-sm-3 nopadding"> 
+                                    <input type="text" class="form-control clearable" only-numbers="{'allowNegative':false,'allowDecimal':true}" ng-model="vm.intervention.duration"> 
+                                </div> 
+                                <div class="col-sm-2 nopadleft"> 
+                                    <label class="nopadding control-label mt5 pl10">Units</label> 
+                                </div> 
+                                  <select class="form-control col-sm-3 nopadright" style="width: auto;" ng-model="vm.intervention.durationUnits">
+																	<option value="Mins">Mins</option>
+																	<option value="Hrs" >Hrs</option>
+																	</select>
+                            </div> 
+                            <div class="form-group nomargin clearfix pt5"> 
+                                <label class="col-sm-4 nopadding control-label mt3">Severity<span class="red-txt">*</span></label> 
+                                <div class="clearfix"></div> 
+                                <div class="col-sm-12 nopadding"> 
+                                    <div class="doc-att"> 
+                                        <div class="col-sm-4 nopadding"> 
+                                            <label class="radio-inline mr5"> 
+                                                <input name="severity" type="radio" id="high-btn" ng-model="vm.intervention.severity" ng-value="'High'">High 
+                                            </label> 
+                                        </div> 
+                                        <div class="col-sm-4 nopadding"> 
+                                            <label class="radio-inline nomarlft"> 
+                                                <input name="severity" type="radio" ng-model="vm.intervention.severity" ng-value="'Medium'" >Medium 
+                                            </label> 
+                                        </div> 
+                                        <div class="col-sm-4 nopadding"> 
+                                            <label class="radio-inline nomarlft"> 
+                                                <input name="severity" type="radio" ng-model="vm.intervention.severity" ng-value="'Low'">Low 
+                                            </label> 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                            <div class="form-group nomargin clearfix pt10"> 
+                                <label class="col-sm-4 nopadding control-label mt3">Status<span class="red-txt">*</span></label> 
+                                <div class="clearfix"></div> 
+                                <div class="col-sm-12 nopadding"> 
+                                    <div class="doc-att"> 
+                                        <div class="col-sm-4 nopadding"> 
+                                            <label class="radio-inline mr5"> 
+                                                <input name="status" type="radio" ng-model="vm.intervention.status" ng-value="'Pending'">Pending 
+                                            </label> 
+                                        </div> 
+                                        <div class="col-sm-4 nopadding"> 
+                                            <label class="radio-inline nomarlft"> 
+                                                <input name="status" type="radio" ng-model="vm.intervention.status" ng-value="'In Progress'">In Progress 
+                                            </label> 
+                                        </div> 
+                                        <div class="col-sm-4 nopadding"> 
+                                            <label class="radio-inline nomarlft"> 
+                                                <input name="status" type="radio" ng-model="vm.intervention.status" ng-value="'Completed'">Completed 
+                                            </label> 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <div class="col-sm-6 mt10 label-left nopadright"> 
+<!--                             <div class="form-group nomargin clearfix">  -->
+<!--                                 <label class="col-sm-3 control-label mt3 nopadding">Action Taken</label>  -->
+<!--                                 <div class="col-sm-9 nopadding">  -->
+<!--                                     <div class="pull-right">  -->
+<!--                                         <button type="button" class="btn btn-default btn-xs btn-lgrey mr5 w25btn pull-left">  -->
+<!--                                             <i class="icon_brows icon-browser"></i>  -->
+<!--                                         </button> -->
+<!--                                          <button type="button" class="btn btn-default btn-xs btn-lgrey w25btn mr5 pull-left" ng-click="vm.spellChecking('intactionTaken')">  -->
+<!--                                             <i class="icon icon-spell1"></i>  -->
+<!--                                         </button>   -->
+<!--                                         <div ng-if="vm.spellCheckFlagForAT"> -->
+<!--     									<ipspellchecker spell-check="vm.spellCheckObjForAT" apply-spell-check="vm.applySpellChecking()"></ipspellchecker> -->
+<!-- 										</div> -->
+<!--                                         <button type="button" class="btn btn-default btn-xs btn-lgrey mr5 w25btn pull-left" ng-click="vm.clearActionTaken()">  -->
+<!--                                             <span class="fnt11">clr</span>  -->
+<!--                                         </button>  -->
+<!--                                         <button type="button" class="btn btn-default btn-xs btn-lgrey mr5 w25btn pull-left" ng-click="vm.appendTimeStamp()">  -->
+<!--                                             <i class="icon icon-clocknw"></i>  -->
+<!--                                         </button>  -->
+<!--                                         <button type="button" class="btn btn-default btn-xs btn-lgrey w85btn pull-left" >  -->
+<!--                                             <span class="fnt11">Action Taken</span>  -->
+<!--                                         </button>  -->
+<!--                                     </div>  -->
+<!--                                 </div>  -->
+<!--                             </div>  -->
+<!--                             <div class="col-sm-12 nopadding mb10">  -->
+<!--                                 <textarea class="form-control action-taken-note" id="intactionTaken" ng-model="vm.intervention.actionTaken"></textarea>  -->
+<!--                             </div>  -->
+                            <div class="form-group nomargin clearfix"> 
+                                <label class="col-sm-3 control-label mt3 nopadding">Notes</label> 
+                                <div class="col-sm-9 nopadding"> 
+                                    <div class="pull-right"> 
+                                        <button type="button" class="btn btn-default btn-xs btn-lgrey mr5 w25btn pull-left"> 
+                                            <i class="icon_brows icon-browser"></i> 
+                                        </button> 
+                                        <button type="button" class="btn btn-default btn-xs btn-lgrey w25btn mr5 pull-left" ng-click="vm.spellChecking('intactionTaken')"> 
+                                            <i class="icon icon-spell1"></i>
+                                          <div ng-if="vm.spellCheckFlagForAT"> 
+     									<ipspellchecker spell-check="vm.spellCheckObjForAT" apply-spell-check="vm.applySpellChecking()"></ipspellchecker> 
+ 										</div>
+                                        </button> 
+                                        <button type="button" class="btn btn-default btn-xs btn-lgrey w25btn pull-left" ng-click="vm.clearNotes()"> 
+                                            <span class="fnt11">clr</span> 
+                                        </button> 
+                                    </div> 
+                                </div>
+                            </div> 
+                            <div class="col-sm-12 nopadding"> 
+                                <textarea class="form-control action-taken-note" id="intactionTaken" ng-model="vm.intervention.notes"></textarea> 
+                            </div>
+                                <!--Dollar Values Starts here  -->
+                                <div class="form-group nomargin clearfix"> 
+                             <label class="col-sm-3 nopadding control-label pt10">Saving Value</label> 
+<!--                                 <div class="clearfix"></div>  -->
+                                <div class="col-sm-3 pt10"> 
+                                    <input type="text" class="form-control clearable" ng-model="vm.intervention.savingValue"> 
+                                </div>
+                                 <label class="col-sm-4 nopadding control-label pt10">Time Spend Value</label> 
+                                <div class="col-sm-2 nopadding pt10"> 
+                                    <input type="text" class="form-control clearable" ng-model="vm.intervention.timeSpendValue"> 
+                                </div>  
+                            </div>
+                            <!--Dollar Values  Ends here  -->  
+                        </div> 
+                    </div> 
+                </div><br/>
+                 <div class="col-sm-12 mt5" perfect-scrollbar style="top: 35px; padding-left: 5px;padding-right: 5px; height:155px;" ng-show="vm.mode=='Edit'">
+                 <div class="simpleTable">
+                   <div class="tablehead"> 
+                  <table class="table table-bordered" ><thead>
+                  <tr><th class="w35p">ModifiedBy / ModifiedOn</th><th>Type</th><th>Severity</th><th>Status</th><th>Duration</th><th>Assigned To</th></tr>
+                    </thead> 
+                    <tr ng-repeat="item in vm.interventionLogs">
+                    <td title="{{item.trUserIdName}} - {{item.modifiedOn}}">{{item.trUserIdName}} - {{item.modifiedOn}}</td>
+                    <td>{{item.interventionType}}</td>
+                    <td>{{item.severity}}</td>
+                    <td>{{item.status}}</td>
+                    <td>{{item.duration}} {{item.durationUnits}}</td>
+                    <td title="{{item.assingnedToName}}">{{item.assingnedToName}}</td>
+                    </tr>           
+                  </table>
+                  </div>
+                  </div> 
+              </div> 
+            </div> 
+            <div class="modal-footer grey-bg ref_foot white-bg nomargin brdrtop">
+            	<span class="red-txt pull-left">*Required fields</span> 
+                <button type="button" class="btn btn-lgrey btn-xs pull-right"  ng-click="vm.dismissModal()">Cancel</button> 
+                <button type="button" class="btn btn-blue btn-xs pull-right mr5 ok-interven" id="ok-inter-red" ng-hide="vm.mode==='Edit' && vm.securitySettings.InterventionEditAccess!==1" ng-disabled="vm.fetchedStatus=='Completed'" ng-click="vm.saveInterventionData(vm.mode);">OK</button> 
+            </div> 
+
+        </div>
+    </div>

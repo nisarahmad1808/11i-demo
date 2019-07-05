@@ -1,0 +1,39 @@
+<button class="btn btn-lgrey btn-xs drugMonographIcon" 
+		data-toggle="modal" 
+		data-target="#drugMonographModal"
+		ng-click="drugMonographCtrl.loadDrugMonographData()" style="margin-left: 8px">{{drugMonographCtrl.title}}</button>
+		
+<div class="modal fade out" data-backdrop="false" aria-hidden="false" id="drugMonographModal" ng-if="drugMonographCtrl.modalOpen">
+	<div class="modal-dialog" style="width:75% !important; height: 568px !important; top:3%;">
+		<div class="modal-content  global-property">
+			<div class="modal-header" style="height: 45px !important;">
+    			<h4 class="pull-left" style="font-size: 16px !important; margin-top:10px;">
+    				<b> <span id="drugName" ng-init="drugMonographCtrl.setDrugDesc()"> </span> </b> 
+    			</h4>
+				<div class="pull-right">
+					<button type="button" class="close" ng-click="drugMonographCtrl.close()" aria-hidden="true" style="position: absolute; top: 25%">&times;</button>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+			<div class="modal-body drugMonographBody" style="width:100%; height:480px;"> 
+				<div class="row nomargin">
+					<div class="col-sm-12 nopadding" id="monographInfo" style="width: 100%; max-height:475px;"  perfect-scrollbar> </div>
+				</div>
+			</div>
+					
+			<div class="modal-footer nopadding" ng-if="drugMonographCtrl.hasData">
+				<table style="float:right; width:14% !important">
+					<tr>
+						<td width="50%"> 
+							<print-button unique-id="eMARDrugMonograph" print-label="Print" print-data-destination="drugMonographCtrl.print.destination" format="drugMonographCtrl.print.format"  show-preview = "true" module="pharmacy" masterencounter-id="drugMonographCtrl.masterEncounterId" patient-id="drugMonographCtrl.patientId" plain-data="drugMonographCtrl.print.monographData"></print-button>
+						</td>
+						<td width="50%" style="padding:5px;"> 
+							<button type="button" class="btn btn-blue btn-xs" ng-click="drugMonographCtrl.close()">Cancel</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

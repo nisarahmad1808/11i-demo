@@ -1,0 +1,60 @@
+<div class="modal-header pt8 pb8 clearfix">
+	<button type="button" class="close rxInfoCloseButton" ng-click="rxInfoCtrl.close()">&times;</button>
+	<h4 class="modal-title"> Rx Information Screen </h4>
+</div>
+<div class="modal-body" ng-init="rxInfoCtrl.init()">
+	<div class = "row">
+		<div class="col-sm-12">
+			<div class="col-sm-4 nopadding rxInfoDrugList" perfect-scrollbar>
+				<div class = "row nomargin" id="disRxInfoDrugHeader">
+					<div class = "col-sm-12" id="drugListHeader">
+						<span class="bold green-text full-height lh24">DISCHARGE MEDICATIONS</span>
+					</div>
+				</div>
+				<div class = "row nomargin">
+					<div class = "col-sm-12 nopadding">
+						<table class="dischargeMedTable" width="100%">
+							<tr ng-repeat="drug in rxInfoCtrl.drugList track by $index" id="{{'drugDesc'+$index}}" ng-click ="rxInfoCtrl.sectionHighLight('drugDesc'+$index, $index)" ng-repeat-end="ngRepeatFinished">
+								<td class="pad8" ng-bind="drug.drugDesc"></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+						
+			<div class="col-sm-8">
+				<div class="row">
+					<div class = "col-sm-12 tabs-wrap right nobg whitetab mt5">
+						<ul class="pull-right nav fnbld nopadding" style="width: 33% !important;">
+							<li ng-class="{'active' :  rxInfoCtrl.activeTab == '2'}">
+								<a href="javascript:void(0)" data-toggle="tab" data-target="#dischargeReconcileDrugMonographTab" ng-click="rxInfoCtrl.loadTab(2)">Drug Monograph</a>
+							</li>
+							<li ng-class="{'active' :  rxInfoCtrl.activeTab == '1'}">
+								<a href="javascript:void(0)" data-toggle="tab" data-target="#dischargeReconcileRxEducationTab" ng-click="rxInfoCtrl.loadTab(1)">Rx Education</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="row" id="dischargeReconcileRxEducationTab" ng-show="rxInfoCtrl.activeTab == '1'">
+					<div class="col-sm-12 rxEduInfo" perfect-scrollbar> </div>
+				</div>
+				
+				<div class="row nopadding" id="dischargeReconcileDrugMonographTab" ng-show="rxInfoCtrl.activeTab == '2'"> 
+					<div class="col-sm-12 monographInfo nopadding" perfect-scrollbar> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>			
+<div class="modal-footer" ng-if="rxInfoCtrl.hasData">
+	<table style="float:right; width:14% !important">
+		<td width="50%">
+			<print-button show-preview = "true" unique-id="dischargeMedicationPrint" print-label="Print" print-data-destination="rxInfoCtrl.print.destination" format="rxInfoCtrl.print.format" module="Discharge Reconciliation" masterencounter-id="rxInfoCtrl.masterEncounterId" patient-id="rxInfoCtrl.patientId" plain-data="rxInfoCtrl.print.printData"></print-button>
+		</td>
+		<td width="50%" style="padding:5px;">
+			<button type="button" class="btn btn-blue btn-xs" ng-click="rxInfoCtrl.close()">Cancel</button>
+		</td>
+	</table>
+</div>
+
